@@ -5,6 +5,7 @@ Public Class FrmSAWT
     Public DateTo As Date
     Public CostCenter As String
 
+    'Test
     Private Sub FrmSAWT_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select Case ReportType
             Case "MAP"

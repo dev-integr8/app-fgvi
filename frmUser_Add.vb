@@ -335,7 +335,7 @@ Public Class frmUser_Add
                 SQL.AddParam("@Position", txtPosition.Text)
                 SQL.ExecNonQuery(updateSQL)
             End If
-            
+
         Catch ex As Exception
             activityStatus = False
             SaveError(ex.Message, ex.StackTrace, Me.Name.ToString, ModuleID)
