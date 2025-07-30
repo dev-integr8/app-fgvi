@@ -1,0 +1,1723 @@
+BEGIN_RECORD_SECTION
+  BEGIN_CONTROL_RECORD
+    BEGIN_FIELDS
+      NAME                 TABNAM
+      TEXT                 Name of table structure
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0001
+      BYTE_FIRST           000001
+      BYTE_LAST            000010
+
+      NAME                 MANDT
+      TEXT                 Client
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0002
+      BYTE_FIRST           000011
+      BYTE_LAST            000013
+      VALUE_TABLE          T000
+
+      NAME                 DOCNUM
+      TEXT                 IDoc number
+      TYPE                 CHARACTER
+      LENGTH               000016
+      FIELD_POS            0003
+      BYTE_FIRST           000014
+      BYTE_LAST            000029
+
+      NAME                 DOCREL
+      TEXT                 SAP Release for IDoc
+      TYPE                 CHARACTER
+      LENGTH               000004
+      FIELD_POS            0004
+      BYTE_FIRST           000030
+      BYTE_LAST            000033
+
+      NAME                 STATUS
+      TEXT                 Status of IDoc
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0005
+      BYTE_FIRST           000034
+      BYTE_LAST            000035
+      VALUE_TABLE          TEDS1
+
+      NAME                 DIRECT
+      TEXT                 Direction
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0006
+      BYTE_FIRST           000036
+      BYTE_LAST            000036
+      VALUE                '1'
+      VALUE_TEXT           Outbound
+      VALUE                '2'
+      VALUE_TEXT           Inbound
+
+      NAME                 OUTMOD
+      TEXT                 Output mode
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0007
+      BYTE_FIRST           000037
+      BYTE_LAST            000037
+      VALUE                '1'
+      VALUE_TEXT           Transfer IDoc immediately and start external subsystem
+      VALUE                '2'
+      VALUE_TEXT           Transfer IDoc immediately
+      VALUE                '3'
+      VALUE_TEXT           Collect IDocs, transfer and start external subsystem
+      VALUE                '4'
+      VALUE_TEXT           Collect IDocs and transfer
+
+      NAME                 EXPRSS
+      TEXT                 Overriding in inbound processing
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0008
+      BYTE_FIRST           000038
+      BYTE_LAST            000038
+      VALUE                ''
+      VALUE_TEXT           No overriding
+      VALUE                'X'
+      VALUE_TEXT           Overriding
+
+      NAME                 TEST
+      TEXT                 Test flag
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0009
+      BYTE_FIRST           000039
+      BYTE_LAST            000039
+      VALUE                ''
+      VALUE_TEXT           IDoc contains a productive message
+      VALUE                'X'
+      VALUE_TEXT           IDoc contains a test message
+
+      NAME                 IDOCTYP
+      TEXT                 Name of basic type
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0010
+      BYTE_FIRST           000040
+      BYTE_LAST            000069
+      VALUE_TABLE          EDBAS
+
+      NAME                 CIMTYP
+      TEXT                 Extension (defined by customer)
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0011
+      BYTE_FIRST           000070
+      BYTE_LAST            000099
+      VALUE_TABLE          EDCIM
+
+      NAME                 MESTYP
+      TEXT                 Message type
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0012
+      BYTE_FIRST           000100
+      BYTE_LAST            000129
+      VALUE_TABLE          EDMSG
+
+      NAME                 MESCOD
+      TEXT                 Message code
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0013
+      BYTE_FIRST           000130
+      BYTE_LAST            000132
+
+      NAME                 MESFCT
+      TEXT                 Message function
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0014
+      BYTE_FIRST           000133
+      BYTE_LAST            000135
+
+      NAME                 STD
+      TEXT                 EDI standard, flag
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0015
+      BYTE_FIRST           000136
+      BYTE_LAST            000136
+
+      NAME                 STDVRS
+      TEXT                 EDI standard, version and release
+      TYPE                 CHARACTER
+      LENGTH               000006
+      FIELD_POS            0016
+      BYTE_FIRST           000137
+      BYTE_LAST            000142
+
+      NAME                 STDMES
+      TEXT                 EDI message type
+      TYPE                 CHARACTER
+      LENGTH               000006
+      FIELD_POS            0017
+      BYTE_FIRST           000143
+      BYTE_LAST            000148
+
+      NAME                 SNDPOR
+      TEXT                 Sender port (SAP System, external subsystem)
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0018
+      BYTE_FIRST           000149
+      BYTE_LAST            000158
+
+      NAME                 SNDPRT
+      TEXT                 Partner type of sender
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0019
+      BYTE_FIRST           000159
+      BYTE_LAST            000160
+
+      NAME                 SNDPFC
+      TEXT                 Partner Function of Sender
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0020
+      BYTE_FIRST           000161
+      BYTE_LAST            000162
+
+      NAME                 SNDPRN
+      TEXT                 Partner number of sender
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0021
+      BYTE_FIRST           000163
+      BYTE_LAST            000172
+
+      NAME                 SNDSAD
+      TEXT                 Sender address (SADR)
+      TYPE                 CHARACTER
+      LENGTH               000021
+      FIELD_POS            0022
+      BYTE_FIRST           000173
+      BYTE_LAST            000193
+
+      NAME                 SNDLAD
+      TEXT                 Logical address of sender
+      TYPE                 CHARACTER
+      LENGTH               000070
+      FIELD_POS            0023
+      BYTE_FIRST           000194
+      BYTE_LAST            000263
+
+      NAME                 RCVPOR
+      TEXT                 Receiver port
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0024
+      BYTE_FIRST           000264
+      BYTE_LAST            000273
+
+      NAME                 RCVPRT
+      TEXT                 Partner type of recipient
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0025
+      BYTE_FIRST           000274
+      BYTE_LAST            000275
+
+      NAME                 RCVPFC
+      TEXT                 Partner function of recipient
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0026
+      BYTE_FIRST           000276
+      BYTE_LAST            000277
+
+      NAME                 RCVPRN
+      TEXT                 Partner number of recipient
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0027
+      BYTE_FIRST           000278
+      BYTE_LAST            000287
+
+      NAME                 RCVSAD
+      TEXT                 Recipient address (SADR)
+      TYPE                 CHARACTER
+      LENGTH               000021
+      FIELD_POS            0028
+      BYTE_FIRST           000288
+      BYTE_LAST            000308
+
+      NAME                 RCVLAD
+      TEXT                 Logical address of recipient
+      TYPE                 CHARACTER
+      LENGTH               000070
+      FIELD_POS            0029
+      BYTE_FIRST           000309
+      BYTE_LAST            000378
+
+      NAME                 CREDAT
+      TEXT                 Created on
+      TYPE                 DATS YYYYMMDD
+      LENGTH               000008
+      FIELD_POS            0030
+      BYTE_FIRST           000379
+      BYTE_LAST            000386
+
+      NAME                 CRETIM
+      TEXT                 Time created
+      TYPE                 TIMS HHMMSS
+      LENGTH               000006
+      FIELD_POS            0031
+      BYTE_FIRST           000387
+      BYTE_LAST            000392
+
+      NAME                 REFINT
+      TEXT                 Transmission file (EDI Interchange)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0032
+      BYTE_FIRST           000393
+      BYTE_LAST            000406
+
+      NAME                 REFGRP
+      TEXT                 Message group (EDI Message Group)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0033
+      BYTE_FIRST           000407
+      BYTE_LAST            000420
+
+      NAME                 REFMES
+      TEXT                 Message (EDI Message)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0034
+      BYTE_FIRST           000421
+      BYTE_LAST            000434
+
+      NAME                 ARCKEY
+      TEXT                 Key for external message archive
+      TYPE                 CHARACTER
+      LENGTH               000070
+      FIELD_POS            0035
+      BYTE_FIRST           000435
+      BYTE_LAST            000504
+
+      NAME                 SERIAL
+      TEXT                 Serialization
+      TYPE                 CHARACTER
+      LENGTH               000020
+      FIELD_POS            0036
+      BYTE_FIRST           000505
+      BYTE_LAST            000524
+    END_FIELDS
+  END_CONTROL_RECORD
+  BEGIN_DATA_RECORD
+    BEGIN_FIELDS
+      NAME                 SEGNAM
+      TEXT                 Segment (external name)
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0001
+      BYTE_FIRST           000001
+      BYTE_LAST            000030
+
+      NAME                 MANDT
+      TEXT                 Client
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0002
+      BYTE_FIRST           000031
+      BYTE_LAST            000033
+      VALUE_TABLE          T000
+
+      NAME                 DOCNUM
+      TEXT                 IDoc number
+      TYPE                 CHARACTER
+      LENGTH               000016
+      FIELD_POS            0003
+      BYTE_FIRST           000034
+      BYTE_LAST            000049
+
+      NAME                 SEGNUM
+      TEXT                 Segment number
+      TYPE                 CHARACTER
+      LENGTH               000006
+      FIELD_POS            0004
+      BYTE_FIRST           000050
+      BYTE_LAST            000055
+
+      NAME                 PSGNUM
+      TEXT                 Number of superior parent segment
+      TYPE                 CHARACTER
+      LENGTH               000006
+      FIELD_POS            0005
+      BYTE_FIRST           000056
+      BYTE_LAST            000061
+
+      NAME                 HLEVEL
+      TEXT                 Hierarchy level of SAP segment
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0006
+      BYTE_FIRST           000062
+      BYTE_LAST            000063
+
+      NAME                 SDATA
+      TEXT                 Application data
+      TYPE                 CHARACTER
+      LENGTH               001000
+      FIELD_POS            0007
+      BYTE_FIRST           000064
+      BYTE_LAST            001063
+    END_FIELDS
+  END_DATA_RECORD
+  BEGIN_STATUS_RECORD
+    BEGIN_FIELDS
+      NAME                 TABNAM
+      TEXT                 Name of table structure
+      TYPE                 CHARACTER
+      LENGTH               000010
+      FIELD_POS            0001
+      BYTE_FIRST           000001
+      BYTE_LAST            000010
+
+      NAME                 MANDT
+      TEXT                 Client
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0002
+      BYTE_FIRST           000011
+      BYTE_LAST            000013
+      VALUE_TABLE          T000
+
+      NAME                 DOCNUM
+      TEXT                 IDoc number
+      TYPE                 CHARACTER
+      LENGTH               000016
+      FIELD_POS            0003
+      BYTE_FIRST           000014
+      BYTE_LAST            000029
+
+      NAME                 LOGDAT
+      TEXT                 Date of status information
+      TYPE                 DATS YYYYMMDD
+      LENGTH               000008
+      FIELD_POS            0004
+      BYTE_FIRST           000030
+      BYTE_LAST            000037
+
+      NAME                 LOGTIM
+      TEXT                 Time of status information
+      TYPE                 TIMS HHMMSS
+      LENGTH               000006
+      FIELD_POS            0005
+      BYTE_FIRST           000038
+      BYTE_LAST            000043
+
+      NAME                 STATUS
+      TEXT                 Status of IDoc
+      TYPE                 CHARACTER
+      LENGTH               000002
+      FIELD_POS            0006
+      BYTE_FIRST           000044
+      BYTE_LAST            000045
+      VALUE_TABLE          TEDS1
+
+      NAME                 STAMQU
+      TEXT                 Status for message in status record
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0007
+      BYTE_FIRST           000046
+      BYTE_LAST            000048
+
+      NAME                 STAMID
+      TEXT                 Message for status notification: Message class
+      TYPE                 CHARACTER
+      LENGTH               000020
+      FIELD_POS            0008
+      BYTE_FIRST           000049
+      BYTE_LAST            000068
+
+      NAME                 STAMNO
+      TEXT                 Message number for status message
+      TYPE                 CHARACTER
+      LENGTH               000003
+      FIELD_POS            0009
+      BYTE_FIRST           000069
+      BYTE_LAST            000071
+
+      NAME                 STATYP
+      TEXT                 ABAP message type (A, W, E, S, I) in status message
+      TYPE                 CHARACTER
+      LENGTH               000001
+      FIELD_POS            0010
+      BYTE_FIRST           000072
+      BYTE_LAST            000072
+      VALUE                'A'
+      VALUE_TEXT           Cancel
+      VALUE                'W'
+      VALUE_TEXT           Warning
+      VALUE                'E'
+      VALUE_TEXT           Error
+      VALUE                'S'
+      VALUE_TEXT           Success message
+      VALUE                'I'
+      VALUE_TEXT           Information
+
+      NAME                 STAPA1
+      TEXT                 First parameter for message in status record
+      TYPE                 CHARACTER
+      LENGTH               000050
+      FIELD_POS            0011
+      BYTE_FIRST           000073
+      BYTE_LAST            000122
+
+      NAME                 STAPA2
+      TEXT                 Second parameter for message in status record
+      TYPE                 CHARACTER
+      LENGTH               000050
+      FIELD_POS            0012
+      BYTE_FIRST           000123
+      BYTE_LAST            000172
+
+      NAME                 STAPA3
+      TEXT                 Third parameter for message in status record
+      TYPE                 CHARACTER
+      LENGTH               000050
+      FIELD_POS            0013
+      BYTE_FIRST           000173
+      BYTE_LAST            000222
+
+      NAME                 STAPA4
+      TEXT                 Fourth parameter for message in status record
+      TYPE                 CHARACTER
+      LENGTH               000050
+      FIELD_POS            0014
+      BYTE_FIRST           000223
+      BYTE_LAST            000272
+
+      NAME                 STATXT
+      TEXT                 Status text
+      TYPE                 CHARACTER
+      LENGTH               000070
+      FIELD_POS            0015
+      BYTE_FIRST           000273
+      BYTE_LAST            000342
+
+      NAME                 UNAME
+      TEXT                 User name
+      TYPE                 CHARACTER
+      LENGTH               000012
+      FIELD_POS            0016
+      BYTE_FIRST           000343
+      BYTE_LAST            000354
+
+      NAME                 REPID
+      TEXT                 Program
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0017
+      BYTE_FIRST           000355
+      BYTE_LAST            000384
+
+      NAME                 ROUTID
+      TEXT                 Subroutine (routine, function module)
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0018
+      BYTE_FIRST           000385
+      BYTE_LAST            000414
+
+      NAME                 SEGNUM
+      TEXT                 Segment number
+      TYPE                 CHARACTER
+      LENGTH               000006
+      FIELD_POS            0019
+      BYTE_FIRST           000415
+      BYTE_LAST            000420
+
+      NAME                 SEGFLD
+      TEXT                 Segment field
+      TYPE                 CHARACTER
+      LENGTH               000030
+      FIELD_POS            0020
+      BYTE_FIRST           000421
+      BYTE_LAST            000450
+
+      NAME                 REFINT
+      TEXT                 Transmission file (EDI Interchange)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0021
+      BYTE_FIRST           000451
+      BYTE_LAST            000464
+
+      NAME                 REFGRP
+      TEXT                 Message group (EDI Message Group)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0022
+      BYTE_FIRST           000465
+      BYTE_LAST            000478
+
+      NAME                 REFMES
+      TEXT                 Message (EDI Message)
+      TYPE                 CHARACTER
+      LENGTH               000014
+      FIELD_POS            0023
+      BYTE_FIRST           000479
+      BYTE_LAST            000492
+
+      NAME                 ARCKEY
+      TEXT                 Key for external message archive
+      TYPE                 CHARACTER
+      LENGTH               000070
+      FIELD_POS            0024
+      BYTE_FIRST           000493
+      BYTE_LAST            000562
+    END_FIELDS
+  END_STATUS_RECORD
+END_RECORD_SECTION
+BEGIN_SEGMENT_SECTION
+  BEGIN_IDOC           WTADDI01
+    BEGIN_GROUP                   1
+      LEVEL                02
+      STATUS               MANDATORY
+      LOOPMIN              0000000001
+      LOOPMAX              0000010000
+      BEGIN_SEGMENT        E2WTADDI01001
+        SEGMENTTYPE          E1WTADDI01
+        LEVEL                02
+        STATUS               MANDATORY
+        LOOPMIN              0000000001
+        LOOPMAX              0000000001
+        BEGIN_FIELDS
+          NAME                 DATUM
+          TEXT                 Date of use for additional
+          TYPE                 CHARACTER
+          LENGTH               000008
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000071
+
+          NAME                 ADDIAPPL
+          TEXT                 Application for triggering follow-up actions for additionals
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0002
+          BYTE_FIRST           000072
+          BYTE_LAST            000073
+          VALUE                '01'
+          VALUE_TEXT           Goods movement
+          VALUE                '02'
+          VALUE_TEXT           Purchasing/purchase orders
+          VALUE                '03'
+          VALUE_TEXT           Delivery
+          VALUE                '04'
+          VALUE_TEXT           Sales order
+          VALUE                '09'
+          VALUE_TEXT           Transport request
+          VALUE                'I1'
+          VALUE_TEXT           Promotion (internal use only)
+          VALUE                'I2'
+          VALUE_TEXT           Assortment list (internal use only)
+          VALUE                'I3'
+          VALUE_TEXT           Change message (central printing; internal only)
+          VALUE                'I4'
+          VALUE_TEXT           Manual request (internal use only)
+          VALUE                'I5'
+          VALUE_TEXT           Automatic POs for additionals (internal use only)
+          VALUE                'I6'
+          VALUE_TEXT           Request by BAPI
+          VALUE                'I7'
+          VALUE_TEXT           IDoc request from deliveries transaction (VL71)
+          VALUE                'I8'
+          VALUE_TEXT           Additionals monitor
+          VALUE                'I9'
+          VALUE_TEXT           Retail pricing
+          VALUE                '77'
+          VALUE_TEXT           SAP Retail Store workbench
+
+          NAME                 ADDIAPPL_TXT
+          TEXT                 Description of rule
+          TYPE                 CHARACTER
+          LENGTH               000060
+          FIELD_POS            0003
+          BYTE_FIRST           000074
+          BYTE_LAST            000133
+
+          NAME                 ADDIEVENT
+          TEXT                 Event that triggers follow-up actions for additionals
+          TYPE                 CHARACTER
+          LENGTH               000001
+          FIELD_POS            0004
+          BYTE_FIRST           000134
+          BYTE_LAST            000134
+          VALUE                '1'
+          VALUE_TEXT           Create
+          VALUE                '2'
+          VALUE_TEXT           Change
+          VALUE                '9'
+          VALUE_TEXT           Delete
+
+          NAME                 ADDIEVENT_TXT
+          TEXT                 Description of rule
+          TYPE                 CHARACTER
+          LENGTH               000060
+          FIELD_POS            0005
+          BYTE_FIRST           000135
+          BYTE_LAST            000194
+
+          NAME                 ADDI_KUNNR
+          TEXT                 Customer who has requested the additionals
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0006
+          BYTE_FIRST           000195
+          BYTE_LAST            000204
+
+          NAME                 ADDI_LIFNR
+          TEXT                 Vendor who supplies the additionals
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0007
+          BYTE_FIRST           000205
+          BYTE_LAST            000214
+
+          NAME                 SPRAS
+          TEXT                 Language according to ISO 639
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0008
+          BYTE_FIRST           000215
+          BYTE_LAST            000216
+
+          NAME                 MATNR
+          TEXT                 Material number
+          TYPE                 CHARACTER
+          LENGTH               000018
+          FIELD_POS            0009
+          BYTE_FIRST           000217
+          BYTE_LAST            000234
+
+          NAME                 MAKTX
+          TEXT                 Material description
+          TYPE                 CHARACTER
+          LENGTH               000040
+          FIELD_POS            0010
+          BYTE_FIRST           000235
+          BYTE_LAST            000274
+
+          NAME                 ADDIVKME
+          TEXT                 Sales unit of the material
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0011
+          BYTE_FIRST           000275
+          BYTE_LAST            000277
+
+          NAME                 ADDIVKME_TXT
+          TEXT                 ISO codes for measurement unit names
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0012
+          BYTE_FIRST           000278
+          BYTE_LAST            000302
+
+          NAME                 MATNR_EXTERNAL
+          TEXT                 Long material number (future development) for MATNR field
+          TYPE                 CHARACTER
+          LENGTH               000040
+          FIELD_POS            0013
+          BYTE_FIRST           000303
+          BYTE_LAST            000342
+
+          NAME                 MATNR_VERSION
+          TEXT                 Version number (future development) for MATNR field
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0014
+          BYTE_FIRST           000343
+          BYTE_LAST            000352
+
+          NAME                 MATNR_GUID
+          TEXT                 External GUID (future development) for MATNR field
+          TYPE                 CHARACTER
+          LENGTH               000032
+          FIELD_POS            0015
+          BYTE_FIRST           000353
+          BYTE_LAST            000384
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT        E2WTADDI02002
+        SEGMENTTYPE          E1WTADDI02
+        LEVEL                03
+        STATUS               MANDATORY
+        LOOPMIN              0000000001
+        LOOPMAX              0000000001
+        BEGIN_FIELDS
+          NAME                 MTART
+          TEXT                 Material type
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000067
+
+          NAME                 MTART_TXT
+          TEXT                 Description of material type
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0002
+          BYTE_FIRST           000068
+          BYTE_LAST            000092
+
+          NAME                 ATTYP
+          TEXT                 Material category
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0003
+          BYTE_FIRST           000093
+          BYTE_LAST            000094
+          VALUE                ''
+          VALUE_TEXT           Single material (industry)
+          VALUE                '00'
+          VALUE_TEXT           Single material
+          VALUE                '01'
+          VALUE_TEXT           Generic material
+          VALUE                '02'
+          VALUE_TEXT           Variant
+          VALUE                '10'
+          VALUE_TEXT           Sales set
+          VALUE                '11'
+          VALUE_TEXT           Prepack
+          VALUE                '12'
+          VALUE_TEXT           Display
+          VALUE                '20'
+          VALUE_TEXT           Material group material
+          VALUE                '21'
+          VALUE_TEXT           Hierarchy material
+          VALUE                '22'
+          VALUE_TEXT           Group material
+          VALUE                '30'
+          VALUE_TEXT           Material group reference material
+
+          NAME                 ATTYP_TXT
+          TEXT                 Description of rule
+          TYPE                 CHARACTER
+          LENGTH               000060
+          FIELD_POS            0004
+          BYTE_FIRST           000095
+          BYTE_LAST            000154
+
+          NAME                 MATKL
+          TEXT                 Material group
+          TYPE                 CHARACTER
+          LENGTH               000009
+          FIELD_POS            0005
+          BYTE_FIRST           000155
+          BYTE_LAST            000163
+
+          NAME                 MATKL_TXT
+          TEXT                 Description of material group
+          TYPE                 CHARACTER
+          LENGTH               000020
+          FIELD_POS            0006
+          BYTE_FIRST           000164
+          BYTE_LAST            000183
+
+          NAME                 BASME
+          TEXT                 ISO code for base unit of measure of the material
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0007
+          BYTE_FIRST           000184
+          BYTE_LAST            000186
+
+          NAME                 BASME_TXT
+          TEXT                 ISO codes for measurement unit names
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0008
+          BYTE_FIRST           000187
+          BYTE_LAST            000211
+
+          NAME                 INHBR
+          TEXT                 Gross contents
+          TYPE                 CHARACTER
+          LENGTH               000015
+          FIELD_POS            0009
+          BYTE_FIRST           000212
+          BYTE_LAST            000226
+
+          NAME                 INHAL
+          TEXT                 Net contents
+          TYPE                 CHARACTER
+          LENGTH               000015
+          FIELD_POS            0010
+          BYTE_FIRST           000227
+          BYTE_LAST            000241
+
+          NAME                 INHME
+          TEXT                 ISO code for the content unit
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0011
+          BYTE_FIRST           000242
+          BYTE_LAST            000244
+
+          NAME                 INHME_TXT
+          TEXT                 ISO codes for measurement unit names
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0012
+          BYTE_FIRST           000245
+          BYTE_LAST            000269
+
+          NAME                 VPREH
+          TEXT                 Comparison price unit
+          TYPE                 CHARACTER
+          LENGTH               000006
+          FIELD_POS            0013
+          BYTE_FIRST           000270
+          BYTE_LAST            000275
+
+          NAME                 VRKME
+          TEXT                 ISO code for sales unit of the material
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0014
+          BYTE_FIRST           000276
+          BYTE_LAST            000278
+
+          NAME                 VRKME_TXT
+          TEXT                 ISO codes for measurement unit names
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0015
+          BYTE_FIRST           000279
+          BYTE_LAST            000303
+
+          NAME                 SATNR
+          TEXT                 Material number
+          TYPE                 CHARACTER
+          LENGTH               000018
+          FIELD_POS            0016
+          BYTE_FIRST           000304
+          BYTE_LAST            000321
+
+          NAME                 SATNR_KTX
+          TEXT                 Material description
+          TYPE                 CHARACTER
+          LENGTH               000040
+          FIELD_POS            0017
+          BYTE_FIRST           000322
+          BYTE_LAST            000361
+
+          NAME                 SATNR_EXTERNAL
+          TEXT                 Long material number (future development) for field SATNR
+          TYPE                 CHARACTER
+          LENGTH               000040
+          FIELD_POS            0018
+          BYTE_FIRST           000362
+          BYTE_LAST            000401
+
+          NAME                 SATNR_VERSION
+          TEXT                 Version number (future development) for field SATNR
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0019
+          BYTE_FIRST           000402
+          BYTE_LAST            000411
+
+          NAME                 SATNR_GUID
+          TEXT                 External GUID (future development) for field SATNR
+          TYPE                 CHARACTER
+          LENGTH               000032
+          FIELD_POS            0020
+          BYTE_FIRST           000412
+          BYTE_LAST            000443
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT        E2WTADDI03000
+        SEGMENTTYPE          E1WTADDI03
+        LEVEL                03
+        STATUS               MANDATORY
+        LOOPMIN              0000000001
+        LOOPMAX              0000000001
+        BEGIN_FIELDS
+          NAME                 UMREZ
+          TEXT                 Numerator for Conversion to Base Units of Measure
+          TYPE                 CHARACTER
+          LENGTH               000006
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000069
+
+          NAME                 UMREN
+          TEXT                 Denominator for conversion to base units of measure
+          TYPE                 CHARACTER
+          LENGTH               000006
+          FIELD_POS            0002
+          BYTE_FIRST           000070
+          BYTE_LAST            000075
+
+          NAME                 EANNR
+          TEXT                 International Article Number (EAN/UPC)
+          TYPE                 CHARACTER
+          LENGTH               000018
+          FIELD_POS            0003
+          BYTE_FIRST           000076
+          BYTE_LAST            000093
+
+          NAME                 EANTP
+          TEXT                 Category of International Article Number (EAN)
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0004
+          BYTE_FIRST           000094
+          BYTE_LAST            000095
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT        E2WTADDI12000
+        SEGMENTTYPE          E1WTADDI12
+        LEVEL                03
+        STATUS               OPTIONAL
+        LOOPMIN              0000000001
+        LOOPMAX              0000000100
+        BEGIN_FIELDS
+          NAME                 ATNAM
+          TEXT                 Characteristic name
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000093
+
+          NAME                 ATNAM_TXT
+          TEXT                 Characteristic description
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0002
+          BYTE_FIRST           000094
+          BYTE_LAST            000123
+
+          NAME                 ATWRT
+          TEXT                 Characteristic value
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0003
+          BYTE_FIRST           000124
+          BYTE_LAST            000153
+
+          NAME                 ATWRT_TXT
+          TEXT                 Characteristic value description
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0004
+          BYTE_FIRST           000154
+          BYTE_LAST            000183
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT        E2WTADDI13000
+        SEGMENTTYPE          E1WTADDI13
+        LEVEL                03
+        STATUS               OPTIONAL
+        LOOPMIN              0000000001
+        LOOPMAX              0000000001
+        BEGIN_FIELDS
+          NAME                 AKTNR
+          TEXT                 Promotion
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000073
+
+          NAME                 AKTNR_TXT
+          TEXT                 Description
+          TYPE                 CHARACTER
+          LENGTH               000040
+          FIELD_POS            0002
+          BYTE_FIRST           000074
+          BYTE_LAST            000113
+
+          NAME                 AKTYP
+          TEXT                 Promotion category
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0003
+          BYTE_FIRST           000114
+          BYTE_LAST            000117
+
+          NAME                 AKTYP_TXT
+          TEXT                 Description
+          TYPE                 CHARACTER
+          LENGTH               000020
+          FIELD_POS            0004
+          BYTE_FIRST           000118
+          BYTE_LAST            000137
+
+          NAME                 AKART
+          TEXT                 Promotion type
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0005
+          BYTE_FIRST           000138
+          BYTE_LAST            000141
+
+          NAME                 AKART_TXT
+          TEXT                 Description
+          TYPE                 CHARACTER
+          LENGTH               000020
+          FIELD_POS            0006
+          BYTE_FIRST           000142
+          BYTE_LAST            000161
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_SEGMENT        E2WTADDI14002
+        SEGMENTTYPE          E1WTADDI14
+        LEVEL                03
+        STATUS               OPTIONAL
+        LOOPMIN              0000000001
+        LOOPMAX              0000000001
+        BEGIN_FIELDS
+          NAME                 REFBELNR
+          TEXT                 Document number for additional
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0001
+          BYTE_FIRST           000064
+          BYTE_LAST            000073
+
+          NAME                 REFPOSNR
+          TEXT                 Item number of an additional
+          TYPE                 CHARACTER
+          LENGTH               000006
+          FIELD_POS            0002
+          BYTE_FIRST           000074
+          BYTE_LAST            000079
+
+          NAME                 REFSTUNR
+          TEXT                 Additionals: step number
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0003
+          BYTE_FIRST           000080
+          BYTE_LAST            000083
+
+          NAME                 ADDIBELNR
+          TEXT                 Document number for additional
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0004
+          BYTE_FIRST           000084
+          BYTE_LAST            000093
+
+          NAME                 ADDIPOSNR
+          TEXT                 Item number of an additional
+          TYPE                 CHARACTER
+          LENGTH               000006
+          FIELD_POS            0005
+          BYTE_FIRST           000094
+          BYTE_LAST            000099
+
+          NAME                 ADDISTUNR
+          TEXT                 Additionals: step number
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0006
+          BYTE_FIRST           000100
+          BYTE_LAST            000103
+
+          NAME                 ADDIEBELN
+          TEXT                 Additionals: Document number for purchasing document
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0007
+          BYTE_FIRST           000104
+          BYTE_LAST            000113
+
+          NAME                 ADDIEBELP
+          TEXT                 Additionals: Item number of purchasing document
+          TYPE                 CHARACTER
+          LENGTH               000005
+          FIELD_POS            0008
+          BYTE_FIRST           000114
+          BYTE_LAST            000118
+
+          NAME                 ADDIETENR
+          TEXT                 Schedule line
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0009
+          BYTE_FIRST           000119
+          BYTE_LAST            000122
+
+          NAME                 ADDIGRPARVW
+          TEXT                 Additionals: Partner function for the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0010
+          BYTE_FIRST           000123
+          BYTE_LAST            000124
+
+          NAME                 ADDIGRPARTN
+          TEXT                 Additionals: Partner number of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0011
+          BYTE_FIRST           000125
+          BYTE_LAST            000134
+
+          NAME                 ADDIGRNAME1
+          TEXT                 Additionals: Name of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0012
+          BYTE_FIRST           000135
+          BYTE_LAST            000164
+
+          NAME                 ADDIGRNAME2
+          TEXT                 Additionals: Name of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0013
+          BYTE_FIRST           000165
+          BYTE_LAST            000194
+
+          NAME                 ADDIGRSTRAS
+          TEXT                 Additionals: Street where ship-to party is located
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0014
+          BYTE_FIRST           000195
+          BYTE_LAST            000224
+
+          NAME                 ADDIGRPFACH
+          TEXT                 Additionals: Post office box of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0015
+          BYTE_FIRST           000225
+          BYTE_LAST            000234
+
+          NAME                 ADDIGRORT01
+          TEXT                 Additionals: Location of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0016
+          BYTE_FIRST           000235
+          BYTE_LAST            000259
+
+          NAME                 ADDIGRCOUNC
+          TEXT                 Additionals: County code of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0017
+          BYTE_FIRST           000260
+          BYTE_LAST            000262
+
+          NAME                 ADDIGRPSTLZ
+          TEXT                 Additionals: Postal code of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0018
+          BYTE_FIRST           000263
+          BYTE_LAST            000272
+
+          NAME                 ADDIGRLAND1
+          TEXT                 Additionals: Country of the ship-to party
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0019
+          BYTE_FIRST           000273
+          BYTE_LAST            000275
+
+          NAME                 ADDIIRPARVW
+          TEXT                 Additionals: Partner function of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000002
+          FIELD_POS            0020
+          BYTE_FIRST           000276
+          BYTE_LAST            000277
+
+          NAME                 ADDIIRPARTN
+          TEXT                 Additionals: partner number of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0021
+          BYTE_FIRST           000278
+          BYTE_LAST            000287
+
+          NAME                 ADDIIRNAME1
+          TEXT                 Additionals: Name of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0022
+          BYTE_FIRST           000288
+          BYTE_LAST            000317
+
+          NAME                 ADDIIRNAME2
+          TEXT                 Additionals: Name of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0023
+          BYTE_FIRST           000318
+          BYTE_LAST            000347
+
+          NAME                 ADDIIRSTRAS
+          TEXT                 Additionals: Street where bill-to party is located
+          TYPE                 CHARACTER
+          LENGTH               000030
+          FIELD_POS            0024
+          BYTE_FIRST           000348
+          BYTE_LAST            000377
+
+          NAME                 ADDIIRPFACH
+          TEXT                 Additionals: Post office box of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0025
+          BYTE_FIRST           000378
+          BYTE_LAST            000387
+
+          NAME                 ADDIIRORT01
+          TEXT                 Additionals: Location of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000025
+          FIELD_POS            0026
+          BYTE_FIRST           000388
+          BYTE_LAST            000412
+
+          NAME                 ADDIIRCOUNC
+          TEXT                 Additionals: County code of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0027
+          BYTE_FIRST           000413
+          BYTE_LAST            000415
+
+          NAME                 ADDIIRPSTLZ
+          TEXT                 Additionals: Postal code of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0028
+          BYTE_FIRST           000416
+          BYTE_LAST            000425
+
+          NAME                 ADDIIRLAND1
+          TEXT                 Additionals: Country of the bill-to party
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0029
+          BYTE_FIRST           000426
+          BYTE_LAST            000428
+
+          NAME                 TO_STORAGE_LOCATION
+          TEXT                 Warehouse Number / Warehouse Complex
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0030
+          BYTE_FIRST           000429
+          BYTE_LAST            000431
+
+          NAME                 TO_HEADER_ID
+          TEXT                 Transfer order number
+          TYPE                 CHARACTER
+          LENGTH               000010
+          FIELD_POS            0031
+          BYTE_FIRST           000432
+          BYTE_LAST            000441
+
+          NAME                 TO_ITEM_ID
+          TEXT                 Transfer order item
+          TYPE                 CHARACTER
+          LENGTH               000004
+          FIELD_POS            0032
+          BYTE_FIRST           000442
+          BYTE_LAST            000445
+
+          NAME                 TO_KOBER
+          TEXT                 Picking area
+          TYPE                 CHARACTER
+          LENGTH               000003
+          FIELD_POS            0033
+          BYTE_FIRST           000446
+          BYTE_LAST            000448
+        END_FIELDS
+      END_SEGMENT
+      BEGIN_GROUP                   2
+        LEVEL                03
+        STATUS               MANDATORY
+        LOOPMIN              0000000001
+        LOOPMAX              0000000100
+        BEGIN_SEGMENT        E2WTADDI05002
+          SEGMENTTYPE          E1WTADDI05
+          LEVEL                03
+          STATUS               MANDATORY
+          LOOPMIN              0000000001
+          LOOPMAX              0000000001
+          BEGIN_FIELDS
+            NAME                 ADDIMATNR
+            TEXT                 Material number for additional
+            TYPE                 CHARACTER
+            LENGTH               000018
+            FIELD_POS            0001
+            BYTE_FIRST           000064
+            BYTE_LAST            000081
+
+            NAME                 ADDIMAKTX
+            TEXT                 Material description for the additional
+            TYPE                 CHARACTER
+            LENGTH               000040
+            FIELD_POS            0002
+            BYTE_FIRST           000082
+            BYTE_LAST            000121
+
+            NAME                 ADDIMATKL
+            TEXT                 Material group of the additional
+            TYPE                 CHARACTER
+            LENGTH               000009
+            FIELD_POS            0003
+            BYTE_FIRST           000122
+            BYTE_LAST            000130
+
+            NAME                 ADDIMATKL_TXT
+            TEXT                 Description of material group
+            TYPE                 CHARACTER
+            LENGTH               000020
+            FIELD_POS            0004
+            BYTE_FIRST           000131
+            BYTE_LAST            000150
+
+            NAME                 ADDIFM
+            TEXT                 Procedure for additionals
+            TYPE                 CHARACTER
+            LENGTH               000004
+            FIELD_POS            0005
+            BYTE_FIRST           000151
+            BYTE_LAST            000154
+
+            NAME                 ADDIFM_TXT
+            TEXT                 Additionals: Description for the procedure for additionals
+            TYPE                 CHARACTER
+            LENGTH               000040
+            FIELD_POS            0006
+            BYTE_FIRST           000155
+            BYTE_LAST            000194
+
+            NAME                 ADDIINVOC
+            TEXT                 Bill-to party for additional ordered from an external source
+            TYPE                 CHARACTER
+            LENGTH               000001
+            FIELD_POS            0007
+            BYTE_FIRST           000195
+            BYTE_LAST            000195
+            VALUE                ''
+            VALUE_TEXT           Without billing
+            VALUE                '1'
+            VALUE_TEXT           Recipient of the additional
+            VALUE                '2'
+            VALUE_TEXT           Retailer (sold-to party)
+
+            NAME                 ADDIINVOC_TXT
+            TEXT                 Description of rule
+            TYPE                 CHARACTER
+            LENGTH               000060
+            FIELD_POS            0008
+            BYTE_FIRST           000196
+            BYTE_LAST            000255
+
+            NAME                 ADDINUM
+            TEXT                 Control of the number of additionals to be generated
+            TYPE                 CHARACTER
+            LENGTH               000001
+            FIELD_POS            0009
+            BYTE_FIRST           000256
+            BYTE_LAST            000256
+            VALUE                ''
+            VALUE_TEXT           Number is determined from document or stock
+            VALUE                '1'
+            VALUE_TEXT           Number is fixed at 1
+
+            NAME                 ADDINUM_TXT
+            TEXT                 Description of rule
+            TYPE                 CHARACTER
+            LENGTH               000060
+            FIELD_POS            0010
+            BYTE_FIRST           000257
+            BYTE_LAST            000316
+
+            NAME                 ADDINUMBERT
+            TEXT                 Total number of additionals
+            TYPE                 CHARACTER
+            LENGTH               000011
+            FIELD_POS            0011
+            BYTE_FIRST           000317
+            BYTE_LAST            000327
+
+            NAME                 ADDILFDNR
+            TEXT                 Key for transaction data for additionals
+            TYPE                 CHARACTER
+            LENGTH               000004
+            FIELD_POS            0012
+            BYTE_FIRST           000328
+            BYTE_LAST            000331
+
+            NAME                 ADDIMATNR_EXTERNAL
+            TEXT                 Long material number (future development) for ADDIM field
+            TYPE                 CHARACTER
+            LENGTH               000040
+            FIELD_POS            0013
+            BYTE_FIRST           000332
+            BYTE_LAST            000371
+
+            NAME                 ADDIMATNR_VERSION
+            TEXT                 Version number (future development) for ADDIMATNR field
+            TYPE                 CHARACTER
+            LENGTH               000010
+            FIELD_POS            0014
+            BYTE_FIRST           000372
+            BYTE_LAST            000381
+
+            NAME                 ADDIMATNR_GUID
+            TEXT                 External GUID (future development) for ADDIMATNR field
+            TYPE                 CHARACTER
+            LENGTH               000032
+            FIELD_POS            0015
+            BYTE_FIRST           000382
+            BYTE_LAST            000413
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_SEGMENT        E2WTADDI06000
+          SEGMENTTYPE          E1WTADDI06
+          LEVEL                04
+          STATUS               OPTIONAL
+          LOOPMIN              0000000001
+          LOOPMAX              0000001000
+          BEGIN_FIELDS
+            NAME                 ADDISPRAS
+            TEXT                 Language according to ISO 639
+            TYPE                 CHARACTER
+            LENGTH               000002
+            FIELD_POS            0001
+            BYTE_FIRST           000064
+            BYTE_LAST            000065
+
+            NAME                 ADDIROWNR
+            TEXT                 Line number in a text for an additional
+            TYPE                 CHARACTER
+            LENGTH               000004
+            FIELD_POS            0002
+            BYTE_FIRST           000066
+            BYTE_LAST            000069
+
+            NAME                 ADDITXT
+            TEXT                 Text for additional per unit of measure of a material
+            TYPE                 CHARACTER
+            LENGTH               000040
+            FIELD_POS            0003
+            BYTE_FIRST           000070
+            BYTE_LAST            000109
+          END_FIELDS
+        END_SEGMENT
+        BEGIN_GROUP                   3
+          LEVEL                04
+          STATUS               OPTIONAL
+          LOOPMIN              0000000001
+          LOOPMAX              0000001000
+          BEGIN_SEGMENT        E2WTADDI08000
+            SEGMENTTYPE          E1WTADDI08
+            LEVEL                04
+            STATUS               MANDATORY
+            LOOPMIN              0000000001
+            LOOPMAX              0000000001
+            BEGIN_FIELDS
+              NAME                 KUNNR
+              TEXT                 Customer who is to receive the additional
+              TYPE                 CHARACTER
+              LENGTH               000010
+              FIELD_POS            0001
+              BYTE_FIRST           000064
+              BYTE_LAST            000073
+
+              NAME                 NAME
+              TEXT                 Name
+              TYPE                 CHARACTER
+              LENGTH               000030
+              FIELD_POS            0002
+              BYTE_FIRST           000074
+              BYTE_LAST            000103
+
+              NAME                 LAND
+              TEXT                 Country ISO code
+              TYPE                 CHARACTER
+              LENGTH               000002
+              FIELD_POS            0003
+              BYTE_FIRST           000104
+              BYTE_LAST            000105
+
+              NAME                 ORT
+              TEXT                 City
+              TYPE                 CHARACTER
+              LENGTH               000025
+              FIELD_POS            0004
+              BYTE_FIRST           000106
+              BYTE_LAST            000130
+
+              NAME                 WAERS
+              TEXT                 ISO code for the currency
+              TYPE                 CHARACTER
+              LENGTH               000003
+              FIELD_POS            0005
+              BYTE_FIRST           000131
+              BYTE_LAST            000133
+
+              NAME                 ADDINUMBER
+              TEXT                 Number of additionals
+              TYPE                 CHARACTER
+              LENGTH               000011
+              FIELD_POS            0006
+              BYTE_FIRST           000134
+              BYTE_LAST            000144
+            END_FIELDS
+          END_SEGMENT
+          BEGIN_SEGMENT        E2WTADDI09000
+            SEGMENTTYPE          E1WTADDI09
+            LEVEL                05
+            STATUS               OPTIONAL
+            LOOPMIN              0000000001
+            LOOPMAX              0000000100
+            BEGIN_FIELDS
+              NAME                 VKOND
+              TEXT                 Condition type
+              TYPE                 CHARACTER
+              LENGTH               000004
+              FIELD_POS            0001
+              BYTE_FIRST           000064
+              BYTE_LAST            000067
+
+              NAME                 VBETR
+              TEXT                 Rate (condition amount or percentage)
+              TYPE                 CHARACTER
+              LENGTH               000013
+              FIELD_POS            0002
+              BYTE_FIRST           000068
+              BYTE_LAST            000080
+
+              NAME                 VWAER
+              TEXT                 ISO currency code
+              TYPE                 CHARACTER
+              LENGTH               000003
+              FIELD_POS            0003
+              BYTE_FIRST           000081
+              BYTE_LAST            000083
+            END_FIELDS
+          END_SEGMENT
+          BEGIN_SEGMENT        E2WTADDI10000
+            SEGMENTTYPE          E1WTADDI10
+            LEVEL                05
+            STATUS               OPTIONAL
+            LOOPMIN              0000000001
+            LOOPMAX              0000000001
+            BEGIN_FIELDS
+              NAME                 LIFNR
+              TEXT                 Account number of vendor or creditor
+              TYPE                 CHARACTER
+              LENGTH               000010
+              FIELD_POS            0001
+              BYTE_FIRST           000064
+              BYTE_LAST            000073
+
+              NAME                 NORBM
+              TEXT                 Standard purchase order quantity
+              TYPE                 CHARACTER
+              LENGTH               000015
+              FIELD_POS            0002
+              BYTE_FIRST           000074
+              BYTE_LAST            000088
+
+              NAME                 MINBM
+              TEXT                 Minimum purchase order quantity
+              TYPE                 CHARACTER
+              LENGTH               000015
+              FIELD_POS            0003
+              BYTE_FIRST           000089
+              BYTE_LAST            000103
+
+              NAME                 BSTME
+              TEXT                 ISO code for the order unit
+              TYPE                 CHARACTER
+              LENGTH               000003
+              FIELD_POS            0004
+              BYTE_FIRST           000104
+              BYTE_LAST            000106
+
+              NAME                 BSTME_TXT
+              TEXT                 ISO codes for measurement unit names
+              TYPE                 CHARACTER
+              LENGTH               000025
+              FIELD_POS            0005
+              BYTE_FIRST           000107
+              BYTE_LAST            000131
+
+              NAME                 BSTME_UMREZ
+              TEXT                 Numerator for conversion of order unit to base unit
+              TYPE                 CHARACTER
+              LENGTH               000006
+              FIELD_POS            0006
+              BYTE_FIRST           000132
+              BYTE_LAST            000137
+
+              NAME                 BSTME_UMREN
+              TEXT                 Denominator for conversion of order unit to base unit
+              TYPE                 CHARACTER
+              LENGTH               000006
+              FIELD_POS            0007
+              BYTE_FIRST           000138
+              BYTE_LAST            000143
+
+              NAME                 LIFRI
+              TEXT                 Planned delivery time in days
+              TYPE                 CHARACTER
+              LENGTH               000004
+              FIELD_POS            0008
+              BYTE_FIRST           000144
+              BYTE_LAST            000147
+            END_FIELDS
+          END_SEGMENT
+          BEGIN_SEGMENT        E2WTADDI11000
+            SEGMENTTYPE          E1WTADDI11
+            LEVEL                05
+            STATUS               OPTIONAL
+            LOOPMIN              0000000001
+            LOOPMAX              0000000001
+            BEGIN_FIELDS
+              NAME                 AVKVO
+              TEXT                 Start of promotion sales
+              TYPE                 CHARACTER
+              LENGTH               000008
+              FIELD_POS            0001
+              BYTE_FIRST           000064
+              BYTE_LAST            000071
+
+              NAME                 AVKBI
+              TEXT                 End of promotion sales - IS-R
+              TYPE                 CHARACTER
+              LENGTH               000008
+              FIELD_POS            0002
+              BYTE_FIRST           000072
+              BYTE_LAST            000079
+            END_FIELDS
+          END_SEGMENT
+        END_GROUP
+      END_GROUP
+    END_GROUP
+  END_IDOC
+END_SEGMENT_SECTION

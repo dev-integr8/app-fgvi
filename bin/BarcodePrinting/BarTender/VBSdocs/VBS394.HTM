@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Drive Object</TITLE> 
+<META NAME="CATEGORY" CONTENT="Language Reference"> 
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="Drive Object">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Drive Object</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;3</A>&nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="vbs395.htm">See Also</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="vbs397.htm">Properties</A>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="vbs396.htm">Methods</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>
+Provides access to the properties of a particular disk drive or network share.
+</BLOCKQUOTE>
+
+<H5>Remarks</H5>
+<BLOCKQUOTE>
+The following code illustrates the use of  the <b>Drive</b> object to access drive properties:
+<BLOCKQUOTE><PRE><FONT FACE="Courier New" SIZE=3>Sub ShowFreeSpace(drvPath)
+    Dim fs, d, s
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set d = <FONT COLOR="#FF0000">fs.GetDrive(</FONT>fs.GetDriveName(drvPath)<FONT COLOR="#FF0000">)</FONT>
+    s = "Drive " & UCase(drvPath) & " - " 
+    s = s & d.VolumeName  & vbCrLf
+    s = s & "Free Space: " & FormatNumber(d.FreeSpace/1024, 0) 
+    s = s & " Kbytes"
+    MsgBox s
+End Sub
+</FONT></PRE></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<hr noshade size=1>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

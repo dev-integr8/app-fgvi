@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Drive Property</TITLE> 
+<META NAME="CATEGORY" CONTENT="Language Reference"> 
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="Drive Property">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Drive Property</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;3</A>&nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="vbs485.htm">See Also</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="vbs484.htm">Applies To</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>Returns the drive letter of the drive on which the specified file or folder resides. Read-only.</BLOCKQUOTE>
+
+<H5>Syntax</H5>
+<BLOCKQUOTE><i>object</i>.<b>Drive</b>
+
+<P>The <i>object</i> is always a <b>File</b> or <b>Folder</b> object.
+</BLOCKQUOTE>
+
+<H5>Remarks</H5>
+<BLOCKQUOTE>
+The following code illustrates the use of the <b>Drive</b> property:
+<BLOCKQUOTE><pre><font face="Courier New" size=3>Sub ShowFileAccessInfo(filespec)
+    Dim fs, f, s
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set f = fs.GetFile(filespec)
+    s = f.Name & " on Drive " & UCase(<font color="#FF0000">f.Drive</font>) & vbCrLf
+    s = s & "Created: " & f.DateCreated & vbCrLf
+    s = s & "Last Accessed: " & f.DateLastAccessed & vbCrLf
+    s = s & "Last Modified: " & f.DateLastModified  
+    MsgBox s, 0, "File Access Info"
+End Sub</font></pre></BLOCKQUOTE>
+</BLOCKQUOTE>
+<hr noshade size=1>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

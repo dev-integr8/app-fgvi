@@ -1,0 +1,21 @@
+:Base Symblgy.hlp
+1 Bar Code Symbology Reference
+2 Table of Symbologies=Table_of_Symbologies
+1 Symbologies
+2 Australia Post 4-State Customer Code=Australia_Post_4-State_Barcode
+2 Codabar=Codabar
+2 Code 128=Code_128
+2 Regular Code 39=Code_3_of_9
+2 Code 93=Code_93
+2 Code One=Code_One
+2 Data Matrix=Datamatrix
+2 Full ASCII Code 3 of 9=Full_ASCII_Code_3_of_9
+2 Interleaved 2-of-5=Interleaved_2_of_5
+2 KIX 4-State Customer Code=KIX_4_State_Customer_Code
+2 MaxiCode=Maxicode
+2 MSI Plessey=MSI_Plessey
+2 PDF417=PDF417
+2 Postal (Zip, Zip+4, DPBC)=Postal_(Zip__DPBC)
+2 QR Code=QR_Code
+2 Royal Mail 4-State Customer Code=Royal_Mail_4-State_Customer_Code
+2 UPC/EAN/JAN=UPC/EAN/JAN

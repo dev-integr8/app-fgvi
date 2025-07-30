@@ -1,0 +1,563 @@
+:Base BtEng.hlp
+:Title Help
+:Index Automation Help for BarTender=Automtn.hlp
+:Index BarTender Symbology Help=Symblgy.hlp
+:Link Automtn.hlp
+:Link Symblgy.hlp
+1 Introduction=Introduction
+1 Using and Customizing the Online Help=Using_the_Online_Help
+1 Setting Up the Application
+2 Log File Setup Dialog=HIDD_LOG_PAGE
+2 IDoc Definitions Setup Dialog=HIDD_IDOC_FILE
+2 Message Setup Dialog=HIDD_MESSAGES_PAGE
+2 General Options Dialog=HIDD_PREFERENCES_GENERAL
+2 Administrative Setup Dialog=HIDD_ADMINISTRATIVE_SETUP
+2 Protecting Formats with a Password
+3 Log In Dialog=HIDD_LOGIN_DIALOG
+3 Password Setup Dialog=HIDD_SECURITY_DIALOG
+1 Understanding Label Formats
+2 Overview=file_understanding
+2 Start New Label Format=HID_FILE_NEW
+2 Setting Up Label Dimensions and Page Setup
+3 Page Setup=HIDD_PAGESETUP>(w95sec)
+3 Paper Options
+4 Paper Size=file_page_size
+4 Width (of Paper)=file_page_pwidth
+4 Height (of Paper)=file_page_pheight
+4 Orientation=file_page_orient
+3 Margin Options
+4 Page Margins=HIDD_MARGINPAGE
+3 Label Options
+4 Columns=file_page_columns
+4 Rows=file_page_rows
+4 Set Manually=file_page_set
+4 Width=file_page_lwidth
+4 Height=file_page_lheight
+3 Printing Order Options
+4 Starting Corner=file_page_starting
+4 Primary Direction=file_page_direction
+4 Prompt for Starting Label Number at Print Time=file_page_prompt
+4 Track Starting Label Number=file_page_track
+3 Other Page Setup Options
+4 Making Adjustments for Labels with Gaps=file_page_gaps
+4 Using Label Formats Supplied with the Application=file_labelformats_suppliedformats
+4 Creating Circular Labels=file_shape_circularlabels
+2 Opening and Saving Label Formats
+3 Opening Existing Label Formats=proc_man_open
+3 Saving Label Formats=proc_man_save
+3 Save Label Format Using Another Name=HID_FILE_SAVE_AS
+3 Saving All Open Label Formats=HID_FILE_SAVE_ALL
+3 Saving a Label Format as a Previous Version Format=Saving_a_Label_Format_as_a_Previous_Version_Format
+2 Viewing Label Formats
+3 View Menu=HID_MAIN_MENU3
+1 Creating Objects on Label Formats
+2 Overview=create_creatingobject
+2 Creating a Bar Code or Text Object=proc_create_bartext
+2 Drawing a Box=proc_create_box>(w95sec)
+2 Drawing a Line=proc_create_line>(w95sec)
+2 Creating a Picture Object=Importing_a_Linked_Picture>(w95sec)
+2 Arranging Label Objects
+3 Overview=HID_MAIN_MENU6
+3 Move to Front/Send to Back=HID_ARRANGE_MOVE_TO_FRONT
+3 Group Objects Together=HID_ARRANGE_GROUP
+3 Ungroup (Break Apart) a Group of Objects=HID_ARRANGE_UNGROUP
+3 Rotate Objects=HIDD_ROTATE>(w95sec)
+3 Selecting a Group of Objects Using the Pointer Tool=edit_selectgroup
+3 Align Objects in a Group
+4 Align Objects in a Group=HIDD_ALIGN>(w95sec)
+4 Horizontal Alignment Settings=arrange_align_horizontal
+4 Vertical Alignment Settings=arrange_align_vertical
+1 Modifying Objects
+2 Overview=Modifyiing_Objects
+2 Modifying an Object's Data Source
+3 Data Source Property Page
+4 Data Source Property Page=HIDD_DATASOURCEPAGE
+4 Displaying the Data Source Property Page=proc_display_dspp
+4 Basic and Advanced Data Source Options=mod_data_basicadvanced
+4 Deciding Whether to Use Basic or Advanced Mode=Basic_or_Advanced
+3 Selecting a Data Source
+4 Screen Data=mod_sdata_sdata
+4 Database=HID_FILE_INPUT_DATA_FILE_SETUP
+4 Visual Basic Scripting=mod_data_vbs
+4 Date=mod_data_ddataopts
+4 Time=mod_data_tdataopts
+3 Data Source Options
+4 Prompting=HIDD_PROMPTINGPAGE
+4 Validation=HIDD_VALIDATIONPAGE
+4 Truncation=HIDD_TRIMPAGE
+4 Minimum=HIDD_MINIMUMPAGE
+4 Maximum=HIDD_MAXIMUMPAGE
+4 Serialization=HIDD_SERIALIZATIONPAGE
+4 VB Scripting=mod_data_vbs
+4 General=HIDD_GENERALPAGE
+3 Multiple Sub-Strings
+4 Overview=mod_data_list
+4 Understanding the Sub-String List=mod_data_list_understanding
+4 Building a Sub-String List=mod_data_list_building
+4 Reconfiguring the Sub-String List=mod_data_list_reconfiguring
+4 Shortcut Menu for the Sub-String List Option=Shortcut_Menu_for_the_Sub-String_List_Option
+4 Example of Sub-String Concatenation=mod_data_example
+4 Combining Different Data Sources=mod_data_combining_sources
+4 Naming and Sharing Sub-Strings=mod_data_genopts
+2 Modifying Bar Codes
+3 Bar Code Property Page=HIDD_BARCODEPAGE
+3 Modifying a Bar Code's Data Source=HIDD_DATASOURCEPAGE
+3 Bar Code Symbologies=mod_bar_symbol
+3 Dimensions
+4 X dimension=mod_bar_xdim
+4 Ratio of Bar Code=mod_bar_ratio
+4 Density of Bar Code=mod_bar_density
+4 Height of Bar Code=mod_bar_height
+3 Bar Code Options
+4 Character Set=mod_bar_characterset
+4 Check Digit for Bar Code=mod_bar_check
+4 Check Digit Type=mod_bar_checktype
+4 Code Set for Code 128=mod_bar_codeset
+4 Controlling Columns for PDF417=mod_bar_columns
+4 Correction Level for PDF417=mod_bar_correction
+4 Data Source Template=Data_Source_Template
+4 Format Control Code=Format_Control_Code
+4 Guard Bars for UPC/EAN=mod_bar_guard
+4 Mode (Maxicode)=Mode_Maxicode
+4 Number System=mod_bar_numsys
+4 Row Height for PDF417=mod_bar_row
+4 Shape=HIDD_SHAPEPAGE
+4 Start Character for Codabar=mod_bar_start
+4 Stop Character=mod_bar_stop
+4 Symbol Type=mod_bar_symboltype
+4 Truncating PDF417 Symbol Codes=mod_bar_truncated
+4 UCC/EAN-128=mod_bar_ucc
+4 UCC/EAN FNC1 Prefix=mod_bar_uccprefix
+4 UCC/EAN Template=mod_human_ucctemp
+4 UPC Supplemental=modify_barcode_sup
+4 Use Prefix=mod_bar_useprefix
+4 Version for Code One=mod_bar_version
+4 White on Black=mod_bar_whiteonblack
+3 Human Readable
+4 Human Readable Property Page=HIDD_HUMANREADABLEPAGE
+4 Visibility of Human Readable Characters=mod_human_visi
+4 Placement of Human Readable Characters=mod_human_place
+4 Alignment of Human Readable Characters=mod_human_align
+4 Vertical Offset of Human Readable Characters from Bar Code=mod_human_vert
+4 Horizontal Offset of Human Readable Characters from Bar Code=mod_human_horiz
+4 Extra Characters and Spaces in Human Readable Text=mod_human_chtemp
+4 Bar Code Human Readable Options
+5 Hide Check Digit in Human Readable Characters=mod_human_hide
+5 Split UPC-A First and Last Human Readable Characters=mod_human_split
+5 Translate Two Character Representation of ASCII Character=mod_human_code3
+5 Show Start and Stop Characters in Human Readable Characters=mod_human_show
+5 UCC/EAN Template=mod_human_ucctemp
+3 Thermal Control Options
+4 Thermal Options=HIDD_THERMALPRINTEROPTIONS
+2 Modifying Text Objects
+3 Modifying a Text's Data Source=HIDD_DATASOURCEPAGE
+3 Font Options
+4 Font Property Page=HIDD_FONTPAGE
+4 Typeface Family=mod_text_font
+4 Style=mod_text_style
+4 Size=mod_text_size
+4 Substitute Best Matching Printer Font=mod_text_substitute
+4 Effects
+5 Strikeout Text=mod_text_strikeout
+5 Underlined Text=mod_text_underline
+5 White Characters on Black Background=mod_text_whiteonblack
+5 Horizontal Stretch Factor=mod_text_stretch
+3 Text Options
+4 Overview=HIDD_TEXTPAGE
+4 Paragraph Options
+5 Format Type=mod_text_para
+5 Alignment=mod_para_alignment
+5 Width=mod_para_width
+5 Line Spacing=mod_para_spacing
+4 Arc Text
+5 Overview=mod_text_arc
+5 Reference Point=mod_text_arc_refpoint
+5 Radius=mod_text_arc_radius
+5 Reference Angle=mod_text_arc_refangle
+5 Direction=mod_text_arc_direction
+5 Alignment=mod_text_arc_alignment
+2 Importing and Modifying Pictures
+3 Importing a Picture=pictures_importing>(w95sec)
+3 Methods of Importing a Picture
+4 Overview=HIDD_PICTUREPAGE
+4 Three Different Ways to Import a Picture=mod_pictures_sourcetypeoptions
+4 Embedding Pictures=embedding_pictures_into_a_label_format
+4 Linking a Picture=Importing_a_Linked_Picture
+4 Reading Pictures from a Data File=Importing_Data_Sourced_Pictures
+4 Using the Paste Command to Import Bitmaps=edit_paste_bitmap
+3 Picture Property Page
+4 Overview=HIDD_PICTUREPAGE
+4 Picture Source
+5 Type=mod_pictures_sourcetypeoptions
+5 Select Picture=modify_picture_selectpicturebutton
+5 File Name=File_Name
+5 Default Path=modify_picture_defaultpath
+5 Select Path=modify_picture_selectpath
+4 Dimensions
+5 Sizing Pictures=mod_pictures_sizing
+5 Original Size=mod_picture_original
+5 Percentage of Original Size=mod_picture_percent
+5 Fit to Rectangle=mod_picture_fit
+5 Preserve Aspect Ratio=mod_pictures_preserveaspect
+5 Height and Width of Pictures=mod_pictures_sizing_heightwidth
+4 Print-time Error Handling
+5 Handling Pictures not Found=mod_pictures_notfound
+2 Modifying Boxes
+3 Overview=HIDD_BOXOPTIONSPAGE
+3 Height=mod_box_height
+3 Width=mod_box_width
+3 Line Thickness=mod_linestyle_thick
+3 Fill Interior=mod_box_fill
+2 Modifying Lines
+3 Overview=HIDD_LINEOPTIONSPAGE
+3 Length=mod_line_length
+3 Line Thickness=mod_linestyle_thick
+2 Modifying the Position of an Object
+3 Moving an Object=proc_create_move
+3 Position Property Page
+4 The Position Property Page=modify_position
+4 Positioning Objects Using the Position Property Page=HIDD_POSITIONPAGE
+4 Horizontal Offset and Horizontal Alignment=mod_pos_horoffali
+4 Vertical Offset and Vertical Alignment=mod_pos_veroffali
+4 Orientation=mod_pos_orientation
+2 General Object Options
+3 Overview=HIDD_MODIFY_GENERAL_PAGE
+3 Do Not Print Object=mod_general_notprint
+3 Commenting Objects=mod_general_comments
+2 Changing the Color of an Object
+3 Changing the Color of an Object=mod_color_change
+3 Creating a Custom Color=mod_color_create
+2 Modifying Groups of Objects
+3 Modifying the Selected Group=HID_MODIFY_SELECT_GROUP
+2 Modifying the Default Object
+3 Modifying the Default Object=file_labelformats_modifydefaults
+1 Reading Data From Databases
+2 Understanding Databases
+3 Overview=DB_Ovrvw
+3 When to Read From External Data Files=Read_External
+3 The Different Kinds of Data Files=Understanding_Databases
+3 Using ODBC=file_idfs_typeodbc_understanding
+3 Using SAP Intermediate Documents (IDocs)
+4 What SAP R/3 Is=What_SAP_Is
+4 Understanding IDocs=Understanding_IDocs
+4 IDoc Types and Segment Definitions=IDoc_Types_and_Segment_Definitions
+4 Parser Files=Parser_Files
+4 Converting IDoc Hierarchical Data to Flat Records=Converting_IDoc_Hierarchical_Data_to_Flat_Records
+4 Master Segment=Master_Segment
+4 SAP IDoc Definition File=SAP_IDoc_Definition_File
+2 Setting up the Application to Read Databases
+3 Overview=read-dbases
+3 Database Setup Dialog
+4 How to Start the Database Setup Dialog=file_idfs_displaying
+4 Database Setup Dialog=HID_FILE_DATABASE_SETUP
+4 Add Database Wizard
+5 Overview=HIDD_DB_WIZARD_FIRST_PAGE
+5 Add Database Wizard - Types=HIDD_DB_WIZARD_TYPE_PAGE>(w95sec)
+5 Text Files
+6 Text Files=file_idfs_typetext
+6 Selecting a File=HIDD_DB_WIZARD_ASCII_PAGE>(w95sec)
+6 Selecting the Delimitation
+7 Overview of Delimitation Types=HIDD_DB_WIZARD_ASCIIDELIMITATION_PAGE>(w95sec)
+7 Delimited Text=file_asciisetup
+7 Comma Delimitation=file_idfs_typetext_delimiting_comma
+7 Mixed Quote and Comma=file_idfs_typetext_delimiting_mixed
+7 Quote and Comma Delimitation=file_idfs_typetext_delimiting_quotecomma
+7 Tab Delimitation=file_idfs_typetext_delimiting_tab
+7 User Defined Delimiter=file_idfs_typetext_delimiting_user
+6 Specifying the Presence of a Field Name Header
+7 Add Database Wizard - Fields=HIDD_DB_WIZARD_ASCIIFIELDS_PAGE>(w95sec)
+5 ODBC Data Source
+6 Add Database Wizard - Data Source Select=HIDD_DB_WIZARD_DSN_PAGE>(w95sec)
+6 Selecting a Named ODBC Data Source=file_idfs_typeodbc_specifying
+6 Understanding the ODBC Data Source Administrator=file_idfs_typeodbc_creating
+6 Joining Tables
+7 Joining Tables=HIDD_DB_JOIN_PAGE>(w95sec)
+7 Join Type=Advanced_Join_Options
+5 SAP Interface Documents (IDocs)
+6 Add Database Wizard for IDocs=Add_Database_Wizard_for_IDocs
+6 Options Tab for IDocs=HIDD_DB_SETUP_IDOC_OPTIONS_PAGE
+6 Add/Remove IDoc Type Descriptions Window=HIDD_IDOC_FILE
+6 IDoc Type Description Window=HIDD_IDOC_ENTRY
+6 Master Segment Tab=HIDD_DB_SETUP_MASTER_SEGMENT_PAGE
+6 Fields Tab for IDocs=HIDD_DB_SETUP_IDOC_FIELDS_PAGE
+6 Add Fields Window=HIDD_DB_ADD_IDOC_FIELDS
+6 Remove Fields Window=HIDD_DB_REMOVE_IDOC_FIELDS
+6 Repeating Segment Rules Window=HIDD_IDOC_SEGMENT_RULES
+4 Viewing Database Data (Browse Tab)
+5 Viewing Database Data (Browse Tab)=HIDD_DB_BROWSE_PAGE>(w95sec)
+4 Adding Tables
+5 Adding Tables=HIDD_DB_TABLES_PAGE
+4 Querying Data
+5 Query Tab=HIDD_DB_SETUP_QUERY_PAGE>(w95sec)
+5 Understanding Database Indexes=odbc_parameters_settingup_indexes_understanding
+5 Query Prompts=HIDD_DB_QUERYPROMPTSPAGE
+4 Sorting Fields
+5 Sorting Fields=HIDD_DB_SETUP_SORT_PAGE
+4 Joining Tables and Databases
+5 Joining Tables=HIDD_DB_JOIN_PAGE>(w95sec)
+5 Join Type=Advanced_Join_Options
+5 Joining Multiple Databases=HIDD_DB_SETUP_MDB_JOIN_PAGE
+4 Custom SQL
+5 Custom SQL=HIDD_DB_SETUP_RAW_SQL_PAGE>(w95sec)
+4 Database Options
+5 Text File=HIDD_DB_SETUP_ASCII_OPTIONS_PAGE
+5 ODBC=HIDD_DB_SETUP_ODBC_OPTIONS_PAGE>(w95sec)
+5 SAP=HID_IDOC_DATABASE_OPTIONS
+5 Allowing Duplicate Records=Allowing_Duplicate_Records
+4 Database Status
+5 Status Tab (All Databases)=HIDD_DB_SETUP_ODBC_STATUS_PAGE
+5 Status Tab (ODBC Database)=HIDD_DB_SETUP_STATUS_DSN_PAGE>(w95sec)
+5 Database Setup (SAP IDoc Database) - Status=HIDD_DB_SETUP_STATUS_IDOC_PAGE
+5 Status Tab (Text Database)=HIDD_DB_SETUP_STATUS_ASCII_PAGE
+5 Status Tab (Table)=HIDD_DB_SETUP_STATUS_TABLE_PAGE
+5 Status Tab (Field)=HIDD_DB_SETUP_STATUS_FIELD_PAGE
+5 Refreshing the ODBC Data Source=file_idfs_refresh
+5 Creating Aliases
+6 Alias (Database)=file_idfs_names
+6 Edit Alias Dialog=HIDD_DB_ALIAS_DIALOG
+1 Printing Label Formats
+2 Overview=HIDD_PRINTPAGE>(w95sec)
+2 Selecting a Printer
+3 Printer Name=file_print_printer
+3 Print to File=file_printtofile
+2 Quantity of Labels
+3 Identical Copies of Label
+4 Identical Copies of Label=file_print_copies
+4 Options=HIDD_COPIESPAGE
+4 Obtaining the Number of Copies from a Database=file_idfs_serialset
+3 Number of Serialized Labels
+4 Number of Serialized Labels=file_print_serial
+4 Options=HIDD_SERIALIZEDCOPIESPAGE
+4 Obtaining the Number of Serialized Labels from a Database=file_idfs_serialset
+3 Selecting Database Records
+4 Selecting Database Records=file_idfs_record
+4 Use Database Option=file_print_useinputdata
+4 Selected Records=file_idfs_slctdrecrd
+4 Select Records Dialog
+5 Overview of Select Records Dialog=HIDD_DB_BROWSE_SELECTION_DIALOG>(w95sec)
+5 Record Navigation Field=Record_Navigation_Field
+5 Select All Records=Select_All_Records
+5 Deselect All Records=Deselect_All_Records
+5 Show All Fields=Show_All_Fields
+5 Refresh=file_idfs_refresh
+5 Record Number Column=Record_Number_Column
+5 Copies Column=Copies_Column
+5 Record Data=Select_Records_Grid
+5 Show Records=Show_Records
+2 Print Options
+3 Log Print Job=Log_Print_Job
+3 Automatically Print Again=file_print_autoagain
+3 Print to File=file_printtofile
+3 Enable Prompting=enable_prompting
+2 Print Wizard
+3 Understanding the Print Wizard=file_print_wizard
+3 TrueType Font Warning=HIDD_TRUETYPECHECKPAGE
+3 Select Starting Label=HIDD_STARTINGLABELPAGE
+3 Print to File=HIDD_PRINTTOFILEPAGE
+3 Query Prompting=Query_Prompting
+3 Selected at Print-Time=HIDD_PRINTWIZARD
+2 Logging
+3 Accessing the Log File Setup dialog=file_logging_accessing
+3 Log File Setup=HIDD_LOG_PAGE
+3 Sample Log File=file_logging_sample
+3 Organization=file_logging_logalljobs
+3 Output Type=file_logging_output
+3 Header, Per Label, and Footer Settings=file_logging_options
+3 Sub Strings to Log=file_logging_substrings
+3 Track Starting Label Number=file_page_track
+2 Printer Performance
+3 HP (PCL) Compatible Printer Options=HIDD_PERFORMANCEHP
+3 Seagull Windows Printer Driver Options=HIDD_PERFORMANCESEAGULL
+2 Printer Caching
+3 Flush Cache=file_flushcache
+3 Printer Caching=HIDD_INTERMECCACHING
+2 Miscellaneous Printing Topics
+3 Caution for Large Dot-Matrix Print Jobs=file_print_caution
+3 DOS COPY and PRINT Commands=file_printtofile_doscopy
+3 Thermal Options=HIDD_THERMALPRINTEROPTIONS
+3 Do Not Print Object=mod_general_notprint
+1 Automating the Application
+2 Overview=Automation
+1 Automation with the Command Line Interface
+2 Overview=HID_HELP_COMMAND_LINE_PARAMETERS
+2 Understanding Command Line Parameters
+3 Rules For Specifying Command Line Parameters=file_command_params_inside_running_rules
+3 Using Spaces in File Names=file_command_params_longfilenames
+2 Running the Application from Inside Other Programs
+3 Overview=file_command_params_inside_running
+3 Printing Labels Without Start Up Delays=file_command_params_inside_running_withoutdelays>(w95sec)
+3 Preloading the Application=file_command_params_inside_running_preloading>(w95sec)
+2 Changing the Application's Start Up Settings
+3 Changing the Application's Start Up Settings=file_command_params_startup
+3 Providing Alternate Start Up Defaults=file_command_params_defaults
+3 Automatic Label Job Execution=file_command_params_automatic
+3 Using the Application in a "Print Only" Mode=file_command_params_printonly>(w95sec)
+2 Accessing Data Created by Other Programs
+3 Accessing Data Created by Other Programs=file_command_params_inside
+2 Command Line Parameter Reference
+3 Command Line Parameter Reference=file_command_params_command_summary
+:include Automtn.cnt
+1 Bar Code Symbology Reference
+2 Table of Symbologies=Table_of_Symbologies@Symblgy.hlp
+2 Symbologies
+3 Australia Post 4-State Customer Code=Australia_Post_4-State_Barcode@Symblgy.hlp
+3 Codabar=Codabar@Symblgy.hlp
+3 Code 128=Code_128@Symblgy.hlp
+3 Regular Code 39=Code_3_of_9@Symblgy.hlp
+3 Code 93=Code_93@Symblgy.hlp
+3 Code One=Code_One@Symblgy.hlp
+3 Data Matrix=Datamatrix@Symblgy.hlp
+3 Full ASCII Code 39=Full_ASCII_Code_3_of_9@Symblgy.hlp
+3 Interleaved 2-of-5=Interleaved_2_of_5@Symblgy.hlp
+3 KIX 4-State Customer Code=KIX_4_State_Customer_Code@Symblgy.hlp
+3 MaxiCode=Maxicode@Symblgy.hlp
+3 MSI Plessey=MSI_Plessey@Symblgy.hlp
+3 PDF417=PDF417@Symblgy.hlp
+3 US POSTNET (Zip, Zip+4 & DPBC)=Postal_(Zip__DPBC)@Symblgy.hlp
+3 QR Code=QR_Code@Symblgy.hlp
+3 Royal Mail 4-State Customer Code=Royal_Mail_4-State_Customer_Code@Symblgy.hlp
+3 UPC/EAN/JAN=UPC/EAN/JAN@Symblgy.hlp
+2 Symbology Options
+3 Character Set=mod_bar_characterset
+3 Check Digit for Bar Code=mod_bar_check
+3 Check Digit Type=mod_bar_checktype
+3 Code Set for Code 128=mod_bar_codeset
+3 Controlling Columns for PDF417=mod_bar_columns
+3 Correction Level for PDF417=mod_bar_correction
+3 Data Source Template=Data_Source_Template
+3 Density of Bar Code=mod_bar_density
+3 Entering Function Characters in the UCC/EAN-128 Data String=mod_bar_ent_fnc
+3 Extra Characters and Spaces in Human Readable Text=mod_human_chtemp
+3 Format Control Code=Format_Control_Code
+3 Guard Bars for UPC/EAN=mod_bar_guard
+3 Height of Bar Code=mod_bar_height
+3 Hide Check Digit in Human Readable Character=mod_human_hide
+3 Mode (Maxicode)=Mode_Maxicode
+3 Number System=mod_bar_numsys
+3 Ratio of Bar Code=mod_bar_ratio
+3 Row Height for PDF417=mod_bar_row
+3 Shape=HIDD_SHAPEPAGE
+3 Shrink UPC Split Digits=mod_human_shrink
+3 Show Start and Stop Characters in Human Readable Characters=mod_human_show
+3 Start Character for Codabar=mod_bar_start
+3 Supplemental Length=mod_supp_length
+3 Supplemental Style=mod_supp_style
+3 Symbology of Bar Code=mod_bar_symbol
+3 Symbol Type=mod_bar_symboltype
+3 Stop Character=mod_bar_stop
+3 Truncating PDF417 Symbol Codes=mod_bar_truncated
+3 UCC/EAN-128=mod_bar_ucc
+3 UCC/EAN Application Identifiers=mod_bar_UCCEAN_ais
+3 UCC/EAN FNC1 Prefix=mod_bar_uccprefix
+3 UCC/EAN Template=mod_human_ucctemp
+3 UPC Supplemental=modify_barcode_sup
+3 Use Prefix=mod_bar_useprefix
+3 Version for Code One=mod_bar_version
+3 White on Black=mod_bar_whiteonblack
+3 X dimension=mod_bar_xdim
+1 Menu Reference
+2 Overview=Menu_Ref
+2 File Menu
+3 File Menu=HID_MAIN_MENU1
+3 Start New Label Format=HID_FILE_NEW
+3 Open Label Format=HID_FILE_OPEN
+3 Close Label Format=HID_FILE_CLOSE
+3 Saving Label Format=HID_FILE_SAVE
+3 Save Label Format Using Another Name=HID_FILE_SAVE_AS
+3 Saving All Open Label Formats=HID_FILE_SAVE_ALL
+3 Print Dialog=HIDD_PRINTPAGE
+3 Database Setup Dialog=HID_FILE_DATABASE_SETUP
+3 Page Setup Options=HIDD_PAGESETUP
+3 Comments for Label Format=HIDD_COMMENT
+3 Trial Features=HIDD_UL_TRIAL_FEATURES
+3 Recent File=HID_FILE_MRU_FILE1
+3 Exit Command=HID_APP_EXIT
+2 Edit Menu
+3 Edit Menu=HID_MAIN_MENU2
+3 Undo Command=HID_EDIT_UNDO
+3 Redo Command=HID_EDIT_REDO
+3 Cut Command=HID_EDIT_CUT
+3 Copy Command=HID_EDIT_COPY
+3 Paste Command=HID_EDIT_PASTE
+3 Delete Command=HID_EDIT_DELETE
+3 Select All Command=HID_EDIT_SELECT_ALL
+3 Select a Label Object=HID_EDIT_SELECT
+3 Select Command=HID_EDIT_SELECT
+3 Data Edit Tool=HID_EDIT_SCREEN_DATA
+3 Export Command=HIDD_EXPORT
+2 View Menu
+3 View Menu=view_menu
+3 Label Design View=HID_VIEW_LABEL_DESIGN
+3 Main Display Screen=Main_Display_Screen>main
+3 Prompt Design View=HID_VIEW_PROMPT_DESIGN
+3 Showing and Hiding the Main Toolbar=HIDW_TOOLBAR_MAIN
+3 Showing and Hiding the Font Toolbar=HIDW_TOOLBAR_FONT
+3 Showing and Hiding the Arrange Toolbar=HIDW_TOOLBAR_ARRANGE
+3 Showing and Hiding the Status Bar=HIDW_STATUS_BAR
+3 Zoom In on Label=HID_VIEW_ZOOM_IN
+3 Zoom Out on Label=HID_VIEW_ZOOM_OUT
+3 Actual Size on Screen=HID_VIEW_ACTUAL_SIZE
+3 Fit Label in Window=HID_VIEW_FIT_IN_WINDOW
+3 View Options
+4 Overview=HIDD_VIEWOPTIONS>(w95sec)
+4 Specifying Ruler and Grid Settings=proc_desktop_ruler>(w95sec)
+4 Divisions per Inch for Rulers=view_ruler_div
+4 Snap to Rulers=view_ruler_snap
+4 Divisions per Inch for Grid=view_grid_div
+4 Show Grid=view_grid_show
+4 Units of Measure=view_rg_units
+4 Zoom Factor=view_view_zoom
+4 Show Unprintable Region=view_view_show
+2 Create Menu
+3 Create Menu=HID_MAIN_MENU4
+3 Create a Bar Code=HID_CREATE_BARCODE
+3 Create Text=HID_CREATE_TEXT
+3 Create a Line=HID_CREATE_LINE
+3 Create a Box=HID_CREATE_BOX
+3 Create a Picture Object=HID_CREATE_PICTURE
+2 Modify Menu
+3 Modify Menu=HID_MAIN_MENU5
+3 Modifying the Selected Object=HID_MODIFY_SELECT_OBJECT
+3 Modifying Groups of Objects=HID_MODIFY_SELECT_GROUP
+3 Modifying the Default Settings=mod_setdefaults
+2 Arrange Menu
+3 Arrange Menu=Arrange_Menu
+3 Move to Front/Send to Back=HID_ARRANGE_MOVE_TO_FRONT
+3 Group Objects Together=HID_ARRANGE_GROUP
+3 Ungroup (Break Apart) a Group of Objects=HID_ARRANGE_UNGROUP
+3 Rotate Objects=HIDD_ROTATE>(w95sec)
+3 Selecting a Group of Objects Using the Pointer Tool=edit_selectgroup
+3 Align Objects in a Group
+4 Align Objects in a Group=HIDD_ALIGN>(w95sec)
+4 Horizontal Alignment Settings=arrange_align_horizontal
+4 Vertical Alignment Settings=arrange_align_vertical
+2 Tools Menu
+3 Log File Setup=HID_TOOLS_LOG_FILE_SETUP
+3 IDoc Definitions Setup=HID_TOOLS_IDOC_DEFINITIONS_SETUP
+3 Message Setup=HID_TOOLS_MESSAGE_SETUP
+3 General Options=HID_General_Options
+3 Password Setup=HID_TOOLS_SECURITY
+3 Log In=HID_TOOLS_LOGIN
+3 Adminstrative Setup=HID_TOOLS_ADMINISTRATIVE_SETUP
+2 Window Menu
+3 Window Menu=HID_MAIN_MENU7
+3 New Label Design Window=HID_WINDOW_NEW_LABEL
+3 New Prompt Design Window=HID_WINDOW_NEW_PROMPT
+3 Cascade=HID_WINDOW_CASCADE
+3 Tile Horizontally=HID_WINDOW_TILE_HORZ
+3 Tile Vertically=HID_WINDOW_TILE_VERT
+3 Arrange Icons=HID_WINDOW_ARRANGE
+2 Help Menu
+3 Help Menu=HID_MAIN_MENU8
+3 Help Topics=HID_HELP_CONTENTS
+3 Visual Basic Help=vbs_scriptassistant_vbhelp
+3 Seagull on the Web=HID_HELP_SEAGULL_ON_WEB@SEASPENG.HLP
+3 About=HID_HELP_ABOUT
+2 Shortcut Menus
+3 Overview of the Shortcut Menus=The_Shortcut_Menus
+3 Shortcut Menu for the Data-Entry Options=Shortcut_Menu_for_the_Data-Entry_Options
+3 Shortcut Menu for the Label Viewing Area=Shortcut_Menu_for_the_Label_Viewing_Area
+3 Shortcut Menu for the Object Properties=Shortcut_Menu_for_Object_Properties
+3 Shortcut Menu for the Sub-String List Option=Shortcut_Menu_for_the_Sub-String_List_Option
+3 Shortcut Menu for the Toolbars=Shortcut_Menu_for_the_Toolbars
+:include SeaSpEng.cnt

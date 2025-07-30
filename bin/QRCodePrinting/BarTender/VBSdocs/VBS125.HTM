@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD><TITLE>InStr Function</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="Language Reference">
+
+<META NAME="Keywords" CONTENT="InStr function,InStrB function,substrings,comparing strings,strings comparing,strings searching,character positions,strings substrings,strings within strings,strings"><META NAME="Description" CONTENT="InStr Function"></HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>InStr Function</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;1</A>&nbsp;<P></FONT>
+</TD></TR>
+</TABLE> 
+<P><FONT SIZE=2><P>
+<A HREF="vbs126.htm">See Also</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>Returns the position of the first occurrence of one string within another.</BLOCKQUOTE>
+
+<H5>Syntax</H5>
+<BLOCKQUOTE><b>InStr(</b>[<i>start</i><b>, </b>]<i>string1</i><b>, </b><i>string2</i>[<b>, </b><i>compare</i>]<b>)</b><P>
+The <b>InStr</b> function syntax has these arguments:<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>Part</b></FONT></TD>
+<TD><FONT SIZE=2><b>Description</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>start</i></FONT></TD>
+<TD><FONT SIZE=2>Optional. 
+<A HREF="vbs0.htm#defNumericExpression">Numeric expression</A> that sets the starting position for each search. If omitted, search begins at the first character position. If <i>start</i> contains 
+<A HREF="vbs0.htm#defNull"><B>Null</B></A>, an error occurs. The <i>start</i> argument is required if <i>compare</i> is specified.</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string1</i></FONT></TD>
+<TD><FONT SIZE=2>Required. 
+<A HREF="vbs0.htm#defStringExpression">String expression</A> being searched.</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string2</i></FONT></TD>
+<TD><FONT SIZE=2>Required. String expression searched for.</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>compare</i></FONT></TD>
+<TD><FONT SIZE=2>Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. See Settings section for values. If omitted, a binary comparison is performed.</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>Settings</H5>
+<BLOCKQUOTE>The <i>compare</i> argument can have the following values:<p>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE=2><b>Constant</b></FONT></TD>
+		<TD WIDTH=10%><FONT SIZE=2><b>Value</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2><b>Description</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE=2>Perform a binary comparison.</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>Perform a textual comparison.</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>Return Values</H5>
+<BLOCKQUOTE>The <B>InStr</B> function returns the following values:<P>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+<TD><FONT SIZE=2><b>If</b></FONT></TD>
+<TD><FONT SIZE=2><b>InStr returns</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string1</i> is zero-length</FONT></TD>
+<TD><FONT SIZE=2>0</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string1</i> is <b>Null</b></FONT></TD>
+<TD><FONT SIZE=2><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string2</i> is zero-length</FONT></TD>
+<TD><FONT SIZE=2><i>start</i></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string2</i> is <b>Null</b></FONT></TD>
+<TD><FONT SIZE=2><b>Null</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string2</i> is not found</FONT></TD>
+<TD><FONT SIZE=2>0</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>string2</i> is found within <i>string1</i></FONT></TD>
+<TD><FONT SIZE=2>Position at which match is found</FONT></TD></TR>
+<TR VALIGN=TOP>
+<TD><FONT SIZE=2><i>start</i> &gt; <b>Len(</b><i>string2</i><b>)</b></FONT></TD>
+<TD><FONT SIZE=2>0</FONT></TD></TR></TABLE></BLOCKQUOTE>
+
+<H5>Remarks</H5>
+
+<BLOCKQUOTE>
+<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=87%><TR><TD COLSPAN=2 VALIGN=BOTTOM><HR noshade size=1></TD></TR>
+<TR><TD VALIGN=TOP><FONT SIZE=2><b>Note</b>&nbsp;&nbsp;The <b>InStrB</b> function is used with byte data contained in a string.  Instead of returning the character position of the first occurrence of one string within another, <b>InStrB</b> returns the byte position.</FONT></TD></TR>
+<TR><TD COLSPAN=2 VALIGN=TOP><HR noshade size=1></TD></TR></TABLE>
+</BLOCKQUOTE>
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

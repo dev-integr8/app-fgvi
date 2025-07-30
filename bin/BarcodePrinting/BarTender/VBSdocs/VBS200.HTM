@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>StrComp Function</TITLE> 
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="CATEGORY" CONTENT="Language Reference">
+
+
+<META NAME="Keywords" CONTENT="StrComp function,text comparing,case sensitivity,matching strings,comparing strings,string comparison,strings matching,strings comparing,text,strings"></HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>StrComp Function</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;1</A>&nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+<P>
+<FONT SIZE=2>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>
+Returns a value indicating the result of a 
+<A HREF="vbs0.htm#defStringComparison">string comparison</A>. 
+</BLOCKQUOTE>
+
+<H5>Syntax</H5>
+<BLOCKQUOTE>
+<b>StrComp(</b><i>string1</i><b>, </b><i>string2</i>[<b>, </b><i>compare</i>]<b>)</b><p>
+The <b>StrComp</b> function syntax has these arguments:<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>Part</b></FONT></TD>
+	<TD><FONT SIZE=2><b>Description</b></FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string1</i></FONT></TD>
+	<TD><FONT SIZE=2>Required. Any valid 
+	<A HREF="vbs0.htm#defStringExpression">string expression</A>.</FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string2</i></FONT></TD>
+	<TD><FONT SIZE=2>Required. Any valid string expression.</FONT></TD>
+</TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>compare</i></FONT></TD>
+	<TD><FONT SIZE=2>Optional. Numeric value indicating the kind of comparison to use when evaluating strings. If omitted, a binary comparison is performed. See Settings section for values.</FONT></TD>
+</TR>
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>Settings</H5>
+<BLOCKQUOTE>
+The <i>compare</i> argument can have the following values:<p>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD WIDTH=15%><FONT SIZE=2><b>Constant</b></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2><b>Value</b></FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2><b>Description</b></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>vbBinaryCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>0</FONT></TD>
+			<TD WIDTH= "*"><FONT SIZE=2>Perform a binary comparison.</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD WIDTH=15%><FONT SIZE=2><B>vbTextCompare</B></FONT></TD>
+		<TD ALIGN=CENTER WIDTH=10%><FONT SIZE=2>1</FONT></TD>
+			<TD WIDTH="*"><FONT SIZE=2>Perform a textual comparison.</FONT></TD></TR>
+
+</TABLE>
+</BLOCKQUOTE>
+
+<H5>Return Values</H5>
+<BLOCKQUOTE>The <B>StrComp</B> function has the following return values:<P>
+
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>If</b></FONT></TD>
+	<TD><FONT SIZE=2><b>StrComp returns</b></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string1</i> is less than <i>string2</i></FONT></TD>
+	<TD><FONT SIZE=2>-1</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string1</i> is equal to <i>string2</i></FONT></TD>
+	<TD><FONT SIZE=2>&nbsp;0</FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string1</i> is greater than <i>string2</i></FONT></TD>
+	<TD><FONT SIZE=2>&nbsp;1</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2><i>string1</i> or <i>string2</i> is 
+	<A HREF="vbs0.htm#defNull"><b>Null</b></A></FONT></TD>
+	<TD><FONT SIZE=2><b>Null</b></FONT></TD></TR>
+</TABLE>
+</BLOCKQUOTE><p>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

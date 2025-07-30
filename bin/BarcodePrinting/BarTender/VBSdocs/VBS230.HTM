@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+<HEAD>
+<TITLE>VBScript Features</TITLE> 
+<META NAME="CATEGORY" CONTENT="Language Reference"> 
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Description" CONTENT="VBScript Features">
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>VBScript Features</B></FONT>
+
+</TD>
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<P></FONT>
+
+</TD></TR>
+</TABLE> 
+<p>
+ 
+<HR NOSHADE SIZE=1>
+<BR>
+<BLOCKQUOTE>
+<TABLE WIDTH=87% BORDER=1 CELLPADDING=5 CELLSPACING=0>
+<TR VALIGN=TOP BGCOLOR="#DDDDDD">
+	<TD><FONT SIZE=2><b>Category</b></FONT></TD>
+		<TD><FONT SIZE=2><b>Keywords</FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Array handling</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs61.htm">Array</A><BR>
+			<A HREF="vbs573.htm">Dim</A>, 
+			<A HREF="vbs591.htm">Private</A>,
+			<A HREF="vbs593.htm">Public</A>, 
+			<A HREF="vbs597.htm">ReDim</A><BR>
+			<A HREF="vbs131.htm">IsArray</A><BR>
+			<A HREF="vbs577.htm">Erase</A><BR>
+			<A HREF="vbs145.htm">LBound</A>, 
+			<A HREF="vbs214.htm">UBound</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Assignments</FONT></TD>
+		<TD><FONT SIZE=2>
+			<!--A HREF="vsstmLet.htm">=</A><BR-->
+			<!--A HREF="vsstmLet.htm">Let</A><BR-->
+			<A HREF="vbs602.htm">Set</A> </FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Comments</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs599.htm">Comments using ' or Rem</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Constants/Literals</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs244.htm">Empty</A><BR>
+			<A HREF="vbs246.htm">Nothing</A><BR>
+			<A HREF="vbs248.htm">Null</A><BR>
+			<A HREF="vbs249.htm">True</A>, 
+			<A HREF="vbs245.htm">False</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Control flow</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs575.htm">Do...Loop</A><BR>
+			<A HREF="vbs581.htm">For...Next</A><BR> 
+			<A HREF="vbs583.htm">For Each...Next</A><BR> 
+			<A HREF="vbs587.htm">If...Then...Else</A><BR>
+			<A HREF="vbs600.htm">Select Case</A><BR>
+			<A HREF="vbs606.htm">While...Wend</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Conversions</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs59.htm">Abs</A><BR>
+			<A HREF="vbs63.htm">Asc, AscB, AscW</A><BR> 
+			<A HREF="vbs77.htm">Chr, ChrB, ChrW</A><BR>
+			<A HREF="vbs67.htm">CBool</A>, 
+			<A HREF="vbs69.htm">CByte</A><BR>
+			<A HREF="vbs71.htm">CCur</A>, 
+			<A HREF="vbs73.htm">CDate</A><BR>
+			<A HREF="vbs75.htm">CDbl</A>, 
+			<A HREF="vbs79.htm">CInt</A><BR>
+			<A HREF="vbs81.htm">CLng</A>, 
+			<A HREF="vbs87.htm">CSng</A>, 
+			<A HREF="vbs89.htm">CStr</A> <BR>
+			<A HREF="vbs99.htm">DateSerial</A>, 
+			<A HREF="vbs101.htm">DateValue</A><BR>
+			<A HREF="vbs119.htm">Hex</A>, 
+			<A HREF="vbs170.htm">Oct</A>	<BR>		
+			<A HREF="vbs129.htm">Fix</A>, 
+			<A HREF="vbs129.htm">Int</A><BR>
+ 			<A HREF="vbs191.htm">Sgn</A><BR>
+			<A HREF="vbs208.htm">TimeSerial</A>,
+			<A HREF="vbs210.htm">TimeValue</A></FONT></TD><TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Dates/Times</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs91.htm">Date</A>, 
+			<A HREF="vbs206.htm">Time</A><BR>
+			<A HREF="vbs92.htm">DateAdd</A>, 			
+			<A HREF="vbs95.htm">DateDiff</A>, 			
+			<A HREF="vbs97.htm">DatePart</A><BR>
+ 			<A HREF="vbs99.htm">DateSerial</A>, 
+			<A HREF="vbs101.htm">DateValue</A><BR>
+			<A HREF="vbs103.htm">Day</A>, 
+			<A HREF="vbs162.htm">Month</A>, 
+			<A HREF="vbs164.htm">MonthName</A><BR><A HREF="vbs220.htm">Weekday</A>, <A HREF="vbs222.htm">WeekdayName</A>,
+			<A HREF="vbs224.htm">Year</A><BR>
+			<A HREF="vbs121.htm">Hour</A>, 
+			<A HREF="vbs160.htm">Minute</A>, 
+			<A HREF="vbs189.htm">Second</A><BR>
+			<A HREF="vbs168.htm">Now</A><BR>
+			<A HREF="vbs208.htm">TimeSerial</A>,
+			<A HREF="vbs210.htm">TimeValue</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Declarations</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs571.htm">Const</A><BR>
+			<A HREF="vbs573.htm">Dim</A>, 
+			<A HREF="vbs591.htm">Private</A>, 
+			<A HREF="vbs593.htm">Public</A>,
+			<A HREF="vbs597.htm">ReDim</A><BR>
+			<A HREF="vbs585.htm">Function</A>,
+			<A HREF="vbs604.htm">Sub</A></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Formatting Strings</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs109.htm">FormatCurrency</A><BR>
+			<A HREF="vbs111.htm">FormatDateTime</A><BR> 
+			<A HREF="vbs113.htm">FormatNumber</A><BR>
+			<A HREF="vbs593.htm">FormatPercent</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Error Handling</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs588.htm">On Error</A><BR>
+			<A HREF="vbs398.htm">Err</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Input/Output</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs123.htm">InputBox</A><BR>
+			<A HREF="vbs153.htm">LoadPicture</A><BR>
+			<A HREF="vbs166.htm">MsgBox</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Literals</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs244.htm">Empty</A><BR>
+			<A HREF="vbs245.htm">False</A><BR>
+			<A HREF="vbs246.htm">Nothing</A><BR>
+			<A HREF="vbs248.htm">Null</A><BR>
+			<A HREF="vbs249.htm">True</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Math</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs65.htm">Atn</A>, 
+			<A HREF="vbs83.htm">Cos</A>, 
+			<A HREF="vbs193.htm">Sin</A>, 
+			<A HREF="vbs204.htm">Tan</A><BR>
+			<A HREF="vbs105.htm">Exp</A>, 
+			<A HREF="vbs154.htm">Log</A>, 
+			<A HREF="vbs199.htm">Sqr</A><BR>
+			<A HREF="vbs595.htm">Randomize</A>, 
+			<A HREF="vbs177.htm">Rnd</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Miscellaneous</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs174.htm">RGB Function</A></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Objects</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs85.htm">CreateObject</A><br>
+			<A HREF="vbs390.htm">Dictionary</A><br>
+			<A HREF="vbs394.htm">Drive Object</A><br>
+			<A HREF="vbs21.htm">Drives Collection</A><br>
+			<A HREF="vbs398.htm">Err</A><BR>
+			<A HREF="vbs402.htm">File Object</A><br>
+			<A HREF="vbs25.htm">Files Collection</A><br>
+			<A HREF="vbs406.htm">FileSystemObject</A><br>
+			<A HREF="vbs410.htm">Folder Object</A><br>
+			<A HREF="vbs29.htm">Folders Collection</A><br>
+			<A HREF="vbs117.htm">GetObject</A><br>
+			<A HREF="vbs414.htm">TextStream</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Operators</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs418.htm">Addition</A> (+), 
+			<A HREF="vbs446.htm">Subtraction</A> (-)<BR>
+			<A HREF="vbs430.htm">Exponentiation</A> (^)<BR>
+			<A HREF="vbs438.htm">Modulus arithmetic</A> (Mod)<BR>
+			<A HREF="vbs440.htm">Multiplication</A> (*), 
+			<A HREF="vbs426.htm">Division</A> (/), 
+			<A HREF="vbs434.htm">Integer Division</A> (\)<BR>
+			<A HREF="vbs446.htm">Negation</A> (-)<BR>
+			<A HREF="vbs424.htm">String concatenation</A> (&)<BR>
+			<A HREF="vbs226.htm">Equality</A> (=), 
+			<A HREF="vbs226.htm">Inequality</A> (&lt;&gt;)<BR>
+			<A HREF="vbs226.htm">Less Than</A> (&lt;),
+			<A HREF="vbs226.htm">Less Than or Equal To</A> (&lt;=)<BR> 					
+			<A HREF="vbs226.htm">Greater Than</A> (&gt;),
+			<A HREF="vbs226.htm">Greater Than or Equal To</A> (&gt;=)<BR>
+			<A HREF="vbs226.htm">Is</A><BR>
+			<A HREF="vbs226.htm">And</A>,
+			<A HREF="vbs226.htm">Or</A>,
+			<A HREF="vbs226.htm">Xor</A><BR>
+			<A HREF="vbs226.htm">Eqv</A>, 
+			<A HREF="vbs226.htm">Imp</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Options</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs590.htm">Option Explicit</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Procedures</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs570.htm">Call</A><BR>
+			<A HREF="vbs585.htm">Function</A>,
+			<A HREF="vbs604.htm">Sub</A><P></FONT></TD></TR>
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Rounding</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs59.htm">Abs</A><BR>
+			<A HREF="vbs129.htm">Int, Fix</A>,
+			<A HREF="vbs179.htm">Round</A><BR>
+			<A HREF="vbs191.htm">Sgn</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Script Engine ID</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs181.htm">ScriptEngine</A><BR>
+			<A HREF="vbs182.htm">ScriptEngineBuildVersion</A><BR>
+			<A HREF="vbs185.htm">ScriptEngineMajorVersion</A><BR>
+			<A HREF="vbs187.htm">ScriptEngineMinorVersion</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Strings</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs63.htm">Asc</A>, 
+			<A HREF="vbs63.htm">AscB</A>, 
+			<A HREF="vbs63.htm">AscW</A><BR>
+			<A HREF="vbs77.htm">Chr</A>, 
+			<A HREF="vbs77.htm">ChrB</A>, 
+			<A HREF="vbs77.htm">ChrW</A><BR>
+			<A HREF="vbs107.htm">Filter</A>, 
+			<A HREF="vbs125.htm">InStr</A>, 
+			<A HREF="vbs125.htm">InStrB</A><BR>
+			<A HREF="vbs127.htm">InStrRev</A><BR> 
+			<A HREF="vbs143.htm">Join</A><BR> 
+			<A HREF="vbs151.htm">Len</A>, 
+			<A HREF="vbs151.htm">LenB</A><BR>
+			<A HREF="vbs147.htm">LCase</A>, 
+			<A HREF="vbs216.htm">UCase</A><BR>
+			<A HREF="vbs149.htm">Left</A>,
+			<A HREF="vbs149.htm">LeftB</A><BR> 
+			<A HREF="vbs158.htm">Mid</A>,
+			<A HREF="vbs158.htm">MidB</A><BR>
+			<A HREF="vbs175.htm">Right</A>,
+			<A HREF="vbs175.htm">RightB</A><BR>
+			<A HREF="vbs172.htm">Replace</A><BR> 
+			<A HREF="vbs195.htm">Space</A><BR>
+			<A HREF="vbs197.htm">Split</A><BR> 
+			<A HREF="vbs200.htm">StrComp</A><BR>
+			<A HREF="vbs201.htm">String</A><BR>
+			<A HREF="vbs203.htm">StrReverse</A><BR> 
+			<A HREF="vbs156.htm">LTrim</A>, 
+			<A HREF="vbs156.htm">RTrim</A>,
+			<A HREF="vbs156.htm">Trim</A></FONT></TD></TR>
+
+<TR VALIGN=TOP>
+	<TD><FONT SIZE=2>Variants</FONT></TD>
+		<TD><FONT SIZE=2>
+			<A HREF="vbs131.htm">IsArray</A><BR>
+			<A HREF="vbs133.htm">IsDate</A><BR>
+			<A HREF="vbs135.htm">IsEmpty</A><BR>
+			<A HREF="vbs137.htm">IsNull</A><BR>
+			<A HREF="vbs139.htm">IsNumeric</A><BR>
+			<A HREF="vbs141.htm">IsObject</A><BR>
+			<A HREF="vbs212.htm">TypeName</A><BR>
+			<A HREF="vbs218.htm">VarType</A></FONT></TD></TR>
+
+</TABLE></BLOCKQUOTE><P>
+
+<hr noshade size=1>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

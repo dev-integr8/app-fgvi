@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>Drives Collection</TITLE> 
+<META NAME="CATEGORY" CONTENT="Language Reference"> 
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="Drives Collection">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>Drives Collection</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;3</A>&nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="vbs22.htm">See Also</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="vbs24.htm">Properties</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="vbs23.htm">Methods</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>Read-only collection of all available drives.</BLOCKQUOTE>
+
+<H5>Remarks</H5>
+<BLOCKQUOTE>
+Removable-media drives need not have media inserted for them to appear in the <b>Drives</b> collection.
+<p>The following code illustrates how to get the <b>Drives</b> collection and iterate the collection using the <b>For Each...Next</b> statement:
+<BLOCKQUOTE><pre><font face="Courier New" size=3>Sub ShowDriveList
+    Dim fs, d, dc, s, n
+    Set fs = CreateObject("Scripting.FileSystemObject")
+    Set dc = <font color="#FF0000">fs.Drives</font>
+    For Each d in dc
+        s = s & d.DriveLetter & " - " 
+        If d.DriveType = Remote Then
+            n = d.ShareName
+        Else
+            n = d.VolumeName
+        End If
+        s = s & n & vbCrLf
+    Next
+    MsgBox s
+End Sub</font></pre></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<hr noshade size=1>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

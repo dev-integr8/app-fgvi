@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|c:\\users\\kyle erp\\desktop\\debug\\fgvi\\gr8offline4.11 reversal entries\\frmsawt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmsawt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmreport_generator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmreport_generator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmreport_generator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmreport_generator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmsawt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmsawt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\main_jade.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:main_jade.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\main_jade.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:main_jade.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmapv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmapv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmapv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmapv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmapv.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmapv.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmreport_display.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmreport_display.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmglfinacialreportgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmglfinacialreportgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmglfinacialreportgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A03BBE2A-97BC-4B8B-9456-85F49487D93B}|JADE.vbproj|solutionrelative:frmglfinacialreportgenerator.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmSAWT.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\FrmSAWT.vb",
+              "RelativeDocumentMoniker": "FrmSAWT.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\FrmSAWT.vb [Design]",
+              "RelativeToolTip": "FrmSAWT.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T07:20:01.769Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmReport_Generator.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Generator.vb",
+              "RelativeDocumentMoniker": "frmReport_Generator.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Generator.vb [Design]",
+              "RelativeToolTip": "frmReport_Generator.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T07:15:10.826Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main_JADE.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\Main_JADE.vb",
+              "RelativeDocumentMoniker": "Main_JADE.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\Main_JADE.vb",
+              "RelativeToolTip": "Main_JADE.vb",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAgwHkBAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T03:19:05.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main_JADE.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\Main_JADE.vb",
+              "RelativeDocumentMoniker": "Main_JADE.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\Main_JADE.vb [Design]",
+              "RelativeToolTip": "Main_JADE.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T03:18:54.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmSAWT.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\FrmSAWT.vb",
+              "RelativeDocumentMoniker": "FrmSAWT.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\FrmSAWT.vb",
+              "RelativeToolTip": "FrmSAWT.vb",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-14T03:09:04.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmAPV.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.vb",
+              "RelativeDocumentMoniker": "frmAPV.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.vb",
+              "RelativeToolTip": "frmAPV.vb",
+              "ViewState": "AgIAAFgFAAAAAAAAAAAwwGoFAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T03:19:33.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmReport_Generator.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Generator.vb",
+              "RelativeDocumentMoniker": "frmReport_Generator.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Generator.vb",
+              "RelativeToolTip": "frmReport_Generator.vb",
+              "ViewState": "AgIAAOYCAAAAAAAAAAAIwPYCAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T01:28:22.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmAPV.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.vb",
+              "RelativeDocumentMoniker": "frmAPV.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.vb [Design]",
+              "RelativeToolTip": "frmAPV.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T03:19:37.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmAPV.designer.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.designer.vb",
+              "RelativeDocumentMoniker": "frmAPV.designer.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmAPV.designer.vb",
+              "RelativeToolTip": "frmAPV.designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-07-10T07:00:30.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmGLFinacialReportGenerator.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmGLFinacialReportGenerator.vb",
+              "RelativeDocumentMoniker": "frmGLFinacialReportGenerator.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmGLFinacialReportGenerator.vb",
+              "RelativeToolTip": "frmGLFinacialReportGenerator.vb",
+              "ViewState": "AgIAAGwAAAAANDMzM7MZwHwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-14T08:30:40.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmGLFinacialReportGenerator.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmGLFinacialReportGenerator.vb",
+              "RelativeDocumentMoniker": "frmGLFinacialReportGenerator.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmGLFinacialReportGenerator.vb [Design]",
+              "RelativeToolTip": "frmGLFinacialReportGenerator.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-06-14T08:30:38.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmReport_Display.vb",
+              "DocumentMoniker": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Display.vb",
+              "RelativeDocumentMoniker": "frmReport_Display.vb",
+              "ToolTip": "C:\\Users\\Kyle ERP\\Desktop\\Debug\\FGVI\\Gr8Offline4.11 Reversal Entries\\frmReport_Display.vb",
+              "RelativeToolTip": "frmReport_Display.vb",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAYwPAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-02-25T01:28:23.098Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

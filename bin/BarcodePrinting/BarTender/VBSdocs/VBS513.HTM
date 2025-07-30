@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN"><HTML>
+<HEAD>
+<TITLE>IsRootFolder Property</TITLE> 
+<META NAME="CATEGORY" CONTENT="Language Reference"> 
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso8859-1">
+<META NAME="PRODUCT" CONTENT="Visual Basic Scripting Edition">
+<META NAME="TECHNOLOGY" CONTENT="SCRIPTING">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="IsRootFolder Property">
+</HEAD>
+<BODY BGCOLOR=FFFFFF LINK=#0033CC>
+<!--TOOLBAR_START-->
+<!--TOOLBAR_EXEMPT-->
+<!--TOOLBAR_END-->
+<FONT FACE="Verdana, Arial, Helvetica" SIZE=2>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%><TR VALIGN=TOP><TD WIDTH=360>
+<FONT SIZE=1 COLOR=#660033>Microsoft&#174; Visual Basic&#174; Scripting Edition</FONT><BR>
+<FONT SIZE=5 COLOR=#660033><B>IsRootFolder Property</B></FONT></TD>
+
+
+<TD ALIGN=RIGHT>
+<FONT SIZE=2>&nbsp;<A HREF="VBSTOC.htm">Language&nbsp;Reference</A>&nbsp;<BR>
+<A HREF="vbs18.htm">Version&nbsp;3</A>&nbsp;<P></FONT>
+
+</TD></TR>
+</TABLE> 
+
+<FONT SIZE=2><p>
+<A HREF="vbs515.htm">See Also</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="vbs514.htm">Applies To</A></FONT>
+<HR noshade SIZE=1>
+
+<H5>Description</H5>
+<BLOCKQUOTE>Returns <b>True</b> if the specified folder is the root folder; <b>False</b> if it is not.</BLOCKQUOTE>
+
+<H5>Syntax</H5>
+<BLOCKQUOTE><i>object</i>.<b>IsRootFolder</b>
+
+<P>The <i>object</i> is always a <b>Folder</b> object.
+</BLOCKQUOTE>
+
+<H5>Remarks</H5>
+<BLOCKQUOTE>
+The following code illustrates the use of the <b>IsRootFolder</b> property:
+<BLOCKQUOTE><pre><font face="Courier New" size=3>Dim fs
+Set fs = CreateObject("Scripting.FileSystemObject")
+Sub DisplayLevelDepth(pathspec)
+    Dim f, n
+    Set f = fs.GetFolder(pathspec)
+    If <font color="#FF0000">f.IsRootFolder</font> Then
+        MsgBox "The specified folder is the root folder."
+    Else
+        Do Until <font color="#FF0000">f.IsRootFolder</font>
+            Set f = f.ParentFolder
+            n = n + 1
+        Loop
+        MsgBox "The specified folder is nested " & n & " levels deep."
+    End If
+End Sub</font></pre></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+<hr noshade size=1>
+<FONT SIZE=2>
+<!--COPYRIGHT BEGIN-->&copy; 1997 Microsoft Corporation. All rights reserved.<!--COPYRIGHT END--> 
+</FONT></FONT></BODY></HTML>
+
+
+
+

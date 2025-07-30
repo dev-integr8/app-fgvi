@@ -1,0 +1,23 @@
+EDI_DC40  007990000010010822746C 3012  WTADDI01                                                    WTADDI                                           SAPD61    LS  D61CLNT007                                                                                           SMARTADDI LI  IDD-LIEF03                                                                                           20000621104848                                                                                                                20000621104848      
+E2WTADDI01001                 00799000001001082270000010000000220000621I8Verkaufshilfsmittel-Monitor                                 1Anlegen                                                                         DEXIDD2000          Polo-Shirt                              PCEStück                                                                                                      
+E2WTADDI02002                 007990000010010822700000200000103HAWAHandelsware              00Einzelmaterial                                              IDD11    Grillparty          PCEStück                    0.000          0.000                                      0                                                                                                                                                                             
+E2WTADDI03000                 0079900000100108227000003000001031     1     2050000017742     IE
+E2WTADDI14002                 00799000001001082270000040000010345000074070000100001000000174700001000014500007408000100001WEIDD-LIEF03IDD GmbH                                                    Industrie Straße 10                     Berlin                      12245     DE                                                                                                                                                             00000000000000   
+E2WTADDI05002                 007990000010010822700000500000103ADDI0007                                                  R1301    VKHM-Etiketten      B002                                         ohne Berechnung                                              Anzahl wird aus Beleg bzw. Bestand ermittelt                3          0001                                                                                  
+E2WTADDI08000                 007990000010010822700000600000504R001      Distribution Center south-westDESt. Ingbert                 3          
+E2WTADDI09000                 007990000010010822700000700000605VKP029.65        EUR
+E2WTADDI09000                 007990000010010822700000800000605VKPE57.99        DEM
+E2WTADDI09000                 007990000010010822700000900000605PB000.00         DEM
+E2WTADDI09000                 007990000010010822700001000000605VKP149.89        DEM
+E2WTADDI05002                 007990000010010822700001100000103ADDI0009                                                  R1302    VKHM-Verpackungen   B006                                         ohne Berechnung                                              Anzahl wird aus Beleg bzw. Bestand ermittelt                3          0003                                                                                  
+E2WTADDI08000                 007990000010010822700001200001104R001      Distribution Center south-westDESt. Ingbert                 3          
+E2WTADDI09000                 007990000010010822700001300001205VKP029.65        EUR
+E2WTADDI09000                 007990000010010822700001400001205VKPE57.99        DEM
+E2WTADDI09000                 007990000010010822700001500001205PB000.00         DEM
+E2WTADDI09000                 007990000010010822700001600001205VKP149.89        DEM
+E2WTADDI05002                 007990000010010822700001700000103ADDI0011                                                  R1301    VKHM-Etiketten      B005                                         ohne Berechnung                                              Anzahl wird aus Beleg bzw. Bestand ermittelt                3          0004                                                                                  
+E2WTADDI08000                 007990000010010822700001800001704R001      Distribution Center south-westDESt. Ingbert                 3          
+E2WTADDI09000                 007990000010010822700001900001805VKP029.65        EUR
+E2WTADDI09000                 007990000010010822700002000001805VKPE57.99        DEM
+E2WTADDI09000                 007990000010010822700002100001805PB000.00         DEM
+E2WTADDI09000                 007990000010010822700002200001805VKP149.89        DEM
